@@ -1,0 +1,212 @@
+
+1.Display complete sales data (Salesman, Region, Product).
+
+
+select sm.salesmanname, r.regionname, p.productname from sales s
+    ->   JOIN salesman sm ON s.salesmanId=sm.salesmanId
+    ->   JOIN Region r ON s.regionId =r.regionid
+    ->    JOIN Product p ON s.productID=p.ProductId;
++--------------+------------+--------------+
+| salesmanname | regionname | productname  |
++--------------+------------+--------------+
+| Saleel       | Region1    | Car          |
+| Saleel       | Region1    | Bus          |
+| Saleel       | Region2    | Car          |
+| Saleel       | Region2    | Bus          |
+| Saleel       | Region2    | Cycle        |
+| Saleel       | Region3    | Cycle        |
+| Saleel       | Region3    | Motorcycle   |
+| Saleel       | Region4    | Car          |
+| Rahul        | Region1    | Shirt        |
+| Rahul        | Region1    | Pant         |
+| Rahul        | Region1    | Gloves       |
+| Rahul        | Region2    | Gloves       |
+| Rahul        | Region2    | Book         |
+| Rahul        | Region2    | Pencil       |
+| Rahul        | Region3    | Pencil       |
+| Rahul        | Region3    | Notebook     |
+| Rahul        | Region4    | Keyboard     |
+| Rahul        | Region4    | Mouse        |
+| Omkar        | Region1    | Keyboard     |
+| Omkar        | Region1    | Mouse        |
+| Omkar        | Region2    | Pen Drive    |
+| Omkar        | Region2    | CD           |
+| Omkar        | Region3    | Monitors     |
+| Omkar        | Region3    | Scanners     |
+| Omkar        | Region4    | CD           |
+| Omkar        | Region4    | Scanners     |
+| Ninad        | Region1    | Photos       |
+| Ninad        | Region1    | Photo Frames |
+| Ninad        | Region2    | Shirt        |
+| Ninad        | Region2    | Pant         |
+| Ninad        | Region2    | Gloves       |
+| Ninad        | Region3    | Cycle        |
+| Ninad        | Region3    | Motorcycle   |
+| Ninad        | Region4    | Car          |
+| Ninad        | Region4    | Bus          |
+| Ninad        | Region4    | Cycle        |
++--------------+------------+--------------+
+36 rows in set (0.00 sec)
+*********************************************************************************
+2)Find all products sold by Saleel.
+select distinct productName, salesmanName from  product p, sales s, salesman sm where p.productID = s.productID and s.salesmanID = sm.salesmanID and sm.salesmanName='saleel';
+
+***********************************************************************
+3)List all regions where Rahul works.
+Select sm.salesmanName,r.regionname from sales s,salesman sm,region r Where s.regionid=r.regionid And sm.salesmanName='Rahul'; 
+mysql> Select Distinct sm.salesmanName,r.regionname from sales s,salesman sm,region r Where s.regionid=r.regionid And sm.salesmanName='Rahul';
++--------------+------------+
+| salesmanName | regionname |
++--------------+------------+
+| Rahul        | Region1    |
+| Rahul        | Region2    |
+| Rahul        | Region3    |
+| Rahul        | Region4    |
++--------------+------------+
+4 rows in set (0.00 sec)
+*********************************************************************
+Display all products sold by Omkar.
+mysql> Select Distinct sm.salesmanName, p.productName from sales s,product p,salesman sm WHERE s.productid=p.productid AND sm.salesmanName='Omkar';
++--------------+--------------+
+| salesmanName | productName  |
++--------------+--------------+
+| Omkar        | Car          |
+| Omkar        | Bus          |
+| Omkar        | Cycle        |
+| Omkar        | Motorcycle   |
+| Omkar        | Shirt        |
+| Omkar        | Pant         |
+| Omkar        | Gloves       |
+| Omkar        | Book         |
+| Omkar        | Pencil       |
+| Omkar        | Notebook     |
+| Omkar        | Keyboard     |
+| Omkar        | Mouse        |
+| Omkar        | Pen Drive    |
+| Omkar        | CD           |
+| Omkar        | Monitors     |
+| Omkar        | Scanners     |
+| Omkar        | Photos       |
+| Omkar        | Photo Frames |
++--------------+--------------+
+18 rows in set (0.00 sec)
+*************************************************************************8
+List all products sold in Region3.
+Select p.productname, r.regionname from sales s,region r, salesman sm,product p WHERE r.regionname='Region3';
+mysql> Select Distinct p.productname, r.regionname from sales s,region r, salesman sm,product p WHERE r.regionname='Region3';
++--------------+------------+
+| productname  | regionname |
++--------------+------------+
+| Photo Frames | Region3    |
+| Photos       | Region3    |
+| Scanners     | Region3    |
+| Monitors     | Region3    |
+| CD           | Region3    |
+| Pen Drive    | Region3    |
+| Mouse        | Region3    |
+| Keyboard     | Region3    |
+| Notebook     | Region3    |
+| Pencil       | Region3    |
+| Book         | Region3    |
+| Gloves       | Region3    |
+| Pant         | Region3    |
+| Shirt        | Region3    |
+| Motorcycle   | Region3    |
+| Cycle        | Region3    |
+| Bus          | Region3    |
+| Car          | Region3    |
++--------------+------------+
+18 rows in set (0.00 sec)
+**************************************************************************
+7>>Find salesmen who sell both Car AND Bus.
+mysql> Select distinct sm.salesmanName, p.productname from sales s, salesman sm,product p Where p.productName='car' or p.productName='Bus';
++--------------+-------------+
+| salesmanName | productname |
++--------------+-------------+
+| Ninad        | Car         |
+| Ninad        | Bus         |
+| Omkar        | Car         |
+| Omkar        | Bus         |
+| Rahul        | Car         |
+| Rahul        | Bus         |
+| Saleel       | Car         |
+| Saleel       | Bus         |
++--------------+-------------+
+8 rows in set (0.00 sec)
+*********************************************************************************
+Find salesmen who do not sell Cycle.
+Select distinct sm.SalesManName ,p.productname from sales s ,salesman sm , product p WHERE p.productName Not In('cycle');
++--------------+--------------+
+| SalesManName | productname  |
++--------------+--------------+
+| Saleel       | Photo Frames |
+| Rahul        | Photo Frames |
+| Omkar        | Photo Frames |
+| Ninad        | Photo Frames |
+| Saleel       | Photos       |
+| Rahul        | Photos       |
+| Omkar        | Photos       |
+| Ninad        | Photos       |
+| Saleel       | Scanners     |
+| Rahul        | Scanners     |
+| Omkar        | Scanners     |
+| Ninad        | Scanners     |
+| Saleel       | Monitors     |
+| Rahul        | Monitors     |
+| Omkar        | Monitors     |
+| Ninad        | Monitors     |
+| Saleel       | CD           |
+| Rahul        | CD           |
+| Omkar        | CD           |
+| Ninad        | CD           |
+| Saleel       | Pen Drive    |
+| Rahul        | Pen Drive    |
+| Omkar        | Pen Drive    |
+| Ninad        | Pen Drive    |
+| Saleel       | Mouse        |
+| Rahul        | Mouse        |
+| Omkar        | Mouse        |
+| Ninad        | Mouse        |
+| Saleel       | Keyboard     |
+| Rahul        | Keyboard     |
+| Omkar        | Keyboard     |
+| Ninad        | Keyboard     |
+| Saleel       | Notebook     |
+| Rahul        | Notebook     |
+| Omkar        | Notebook     |
+| Ninad        | Notebook     |
+| Saleel       | Pencil       |
+| Rahul        | Pencil       |
+| Omkar        | Pencil       |
+| Ninad        | Pencil       |
+| Saleel       | Book         |
+| Rahul        | Book         |
+| Omkar        | Book         |
+| Ninad        | Book         |
+| Saleel       | Gloves       |
+| Rahul        | Gloves       |
+| Omkar        | Gloves       |
+| Ninad        | Gloves       |
+| Saleel       | Pant         |
+| Rahul        | Pant         |
+| Omkar        | Pant         |
+| Ninad        | Pant         |
+| Saleel       | Shirt        |
+| Rahul        | Shirt        |
+| Omkar        | Shirt        |
+| Ninad        | Shirt        |
+| Saleel       | Motorcycle   |
+| Rahul        | Motorcycle   |
+| Omkar        | Motorcycle   |
+| Ninad        | Motorcycle   |
+| Saleel       | Bus          |
+| Rahul        | Bus          |
+| Omkar        | Bus          |
+| Ninad        | Bus          |
+| Saleel       | Car          |
+| Rahul        | Car          |
+| Omkar        | Car          |
+| Ninad        | Car          |
++--------------+--------------+
+68 rows in set (0.03 sec)
+*********************************************************************************

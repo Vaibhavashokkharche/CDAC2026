@@ -1,0 +1,214 @@
+1. Count total no. of employees.
+mysql> Select count(*) from emp;
++----------+
+| count(*) |
++----------+
+|       30 |
++----------+
+1 row in set (0.10 sec)
+
+********************************************************************************************************************************
+
+2. Determine the maximum and minimum salary.
+mysql> Select Min(sal) as MinimiumSalary,max(sal) as MaximumSalary from emp;
++----------------+---------------+
+| MinimiumSalary | MaximumSalary |
++----------------+---------------+
+|            800 |          5000 |
++----------------+---------------+
+1 row in set (0.00 sec)
+************************************************************************************************************************
+3. Display the count of employees having salary greater than 3000.
+mysql> Select count(*) from emp Where sal>3000;
++----------+
+| count(*) |
++----------+
+|        4 |
++----------+
+1 row in set (0.03 sec)
+*****************************************************************************************************************************
+4. Print department wise count of employees.
+mysql> Select deptno, Count(*) from emp group by deptno;
++--------+----------+
+| deptno | Count(*) |
++--------+----------+
+|     10 |        5 |
+|     20 |        8 |
+|     30 |       12 |
+|     50 |        3 |
+|     60 |        2 |
++--------+----------+
+5 rows in set (0.03 sec)
+***************************************************************************************************************************************
+5)5. Display employee details who earn maximum and minimum salary.
+
+mysql> Select * from emp Where sal=(Select Max(Sal) from emp) or sal=(Select Min(Sal) from emp);
++-------+-------+--------+----------------+------+------------+------+------+--------+---------+------------+-----------+------------+----------+
+| EMPNO | ENAME | GENDER | JOB            | MGR  | HIREDATE   | SAL  | COMM | DEPTNO | BONUSID | USER NAME  | PWD       | PHONE      | isActive |
++-------+-------+--------+----------------+------+------------+------+------+--------+---------+------------+-----------+------------+----------+
+|  7369 | SMITH | M      | CLERK          | 7902 | 1980-12-17 |  800 | NULL |     20 |       2 | TRITONE    | a12recmpm | 7032300023 |        0 |
+|  7839 | KING  | M      | PRESIDENT      | NULL | 1981-11-17 | 5000 | NULL |     10 |       1 | KING       | r50mpm    | 7132300081 |        1 |
+|  7840 | FRED  | M      | vice PRESIDENT | 7839 | 1983-08-09 | 5000 | NULL |     20 |       1 | SAND STONE | a12recmpm | NULL       |        1 |
++-------+-------+--------+----------------+------+------------+------+------+--------+---------+------------+-----------+------------+----------+
+3 rows in set (0.03 sec)
+
+************************************************************************************************************************************************************************
+6. Print jobwise total salary.
+mysql> Select job , Sum(sal) from emp group by job;
++---------------------+----------+
+| job                 | Sum(sal) |
++---------------------+----------+
+| Compliance officers |     5250 |
+| Public Relation     |     3500 |
+| CLERK               |    11000 |
+| SALESMAN            |     9525 |
+| MANAGER             |    13675 |
+| ANALYST             |     7750 |
+| PRESIDENT           |     5000 |
+| vice PRESIDENT      |     6000 |
+| Network             |     2000 |
++---------------------+----------+
+9 rows in set (0.00 sec)
+*******************************************************************************************************************************************************************************
+7. Print department wise maximum salary.
+mysql> Select dname , Max(e.sal) from emp e JOIN dept d ON d.deptno=e.deptno group by d.dname;
++------------+------------+
+| dname      | Max(e.sal) |
++------------+------------+
+| SALES      |       4150 |
+| HR         |       1750 |
+| RESEARCH   |       5000 |
+| ACCOUNTING |       5000 |
+| IT         |       2000 |
++------------+------------+
+5 rows in set (0.01 sec)
+
+******************************************************************************************************
+8. Print jobwise average salary.
+mysql> Select job ,Round(AVG(sal)) from emp group by job;
++---------------------+-----------------+
+| job                 | Round(AVG(sal)) |
++---------------------+-----------------+
+| Compliance officers |            1750 |
+| Public Relation     |            1750 |
+| CLERK               |            1571 |
+| SALESMAN            |            1588 |
+| MANAGER             |            2735 |
+| ANALYST             |            2583 |
+| PRESIDENT           |            5000 |
+| vice PRESIDENT      |            3000 |
+| Network             |            2000 |
++---------------------+-----------------+
+9 rows in set (0.04 sec)
+
+************************************************************************************************************************
+9. Print count of employee working in department 20.
+mysql> Select deptno ,count(*) from emp where deptno=20;
++--------+----------+
+| deptno | count(*) |
++--------+----------+
+|     20 |        8 |
++--------+----------+
+
+***************************************************************************************************************************
+10. Print count of employee working in department 10 having job as MANAGER..
+mysql> Select job,deptno,count(*) from emp Where deptno=10 And job="Manager";
++---------+--------+----------+
+| job     | deptno | count(*) |
++---------+--------+----------+
+| MANAGER |     10 |        1 |
++---------+--------+----------+
+1 row in set (0.03 sec)
+
+******************************************************************************************************************************************************************
+11. Print count of employee working in department 20 having comm as null.
+mysql> Select deptno ,count(*) from emp where deptno=20 AND IsNull(comm);
++--------+----------+
+| deptno | count(*) |
++--------+----------+
+|     20 |        8 |
++--------+----------+
+1 row in set (0.02 sec)
+*************************************************************************************************************************************************************************
+12. Print names of employees working in ACCOUNTS department having maximum salary.
+mysql> SELECT e.ENAME, d.DNAME
+    -> FROM emp e
+    -> JOIN dept d ON e.DEPTNO = d.DEPTNO
+    -> WHERE d.DNAME = 'Accounting'
+    -> AND e.SAL = (
+    ->     SELECT MAX(e1.SAL)
+    ->     FROM emp e1
+    ->     JOIN dept d1 ON e1.DEPTNO = d1.DEPTNO
+    ->     WHERE d1.DNAME = 'Accounting'
+    -> );
++-------+------------+
+| ENAME | DNAME      |
++-------+------------+
+| KING  | ACCOUNTING |
++-------+------------+
+1 row in set (0.07 sec)
+***************************************************************************************************************************************************************
+
+13. Print employee details having salary less than average salary of MANAGER.
+mysql> Select * from emp Where sal<(Select Avg(sal) from emp WHERE job="Manager");
++-------+----------+--------+---------------------+------+------------+------+------+--------+---------+--------------+------------+------------+----------+
+| EMPNO | ENAME    | GENDER | JOB                 | MGR  | HIREDATE   | SAL  | COMM | DEPTNO | BONUSID | USER NAME    | PWD        | PHONE      | isActive |
++-------+----------+--------+---------------------+------+------------+------+------+--------+---------+--------------+------------+------------+----------+
+|  6001 | GITA     | F      | Compliance officers | 7920 | 1981-07-19 | 1750 | NULL |     30 |       1 | GITA         | sales@2017 | NULL       |        1 |
+|  6129 | VRUSHALI | F      | Compliance officers | 7920 | 1981-07-19 | 1750 | NULL |     50 |       1 | VRUSHALI     | PUN@8877   | NULL       |        1 |
+|  6473 | SHARMIN  | F      | Public Relation     | 7920 | 1981-07-19 | 1750 | NULL |     20 |       1 | SHARMIN      | a12recmpm  | NULL       |        1 |
+|  6781 | BANDISH  | F      | Public Relation     | 7920 | 1981-07-19 | 1750 | NULL |     20 |       1 | BANDISH      | a12recmpm  | NULL       |        1 |
+|  7369 | SMITH    | M      | CLERK               | 7902 | 1980-12-17 |  800 | NULL |     20 |       2 | TRITONE      | a12recmpm  | 7032300023 |        0 |
+|  7421 | THOMAS   | M      | CLERK               | 7920 | 1981-07-19 | 1750 | NULL |     10 |       1 | THOMAS       | r50mpm     | 7032300011 |        0 |
+|  7499 | ALLEN    | M      | SALESMAN            | 7698 | 1981-02-20 | 1600 |  300 |     30 |       4 | ALWAYS TESTE | sales@2017 | 7032300096 |        1 |
+|  7521 | WARD     | M      | SALESMAN            | 7698 | 1981-02-22 | 1250 |  500 |     30 |       1 | WARD         | sales@2017 | 7132300034 |        1 |
+|  7654 | MARTIN   | M      | SALESMAN            | 7698 | 1981-09-28 | 1250 | 1400 |     30 |       6 | LIFE RACER   | sales@2017 | 7132300050 |        1 |
+|  7782 | CLARK    | M      | MANAGER             | 7839 | 1981-06-09 | 2450 | NULL |     10 |       3 | CLARK        | r50mpm     | 7032300001 |        1 |
+|  7844 | TURNER   | M      | SALESMAN            | 7698 | 1981-09-08 | 1500 |    0 |     30 |       5 | SAND DUST    | sales@2017 | NULL       |        1 |
+|  7876 | ADAMS    | M      | CLERK               | 7788 | 1983-01-12 | 1100 | NULL |     20 |       1 | CRAZY ANYONE | a12recmpm  | 7132300086 |        1 |
+|  7888 | Ruhan    | M      | Network             | 7888 | 1983-08-09 | 2000 | NULL |     60 |       1 | Ruhan        | BRD@1122   | NULL       |        1 |
+|  7889 | Neel     | M      | vice PRESIDENT      | 7839 | 1983-08-09 | 1000 | NULL |     60 |       0 | Neel         | BRD@1122   | NULL       |        1 |
+|  7900 | JAMES    | M      | CLERK               | 7698 | 1981-12-03 |  950 | NULL |     30 |       2 | CRAZY LEADER | sales@2017 | 7132300042 |        1 |
+|  7920 | GRASS    | M      | SALESMAN            | 7919 | 1980-02-14 | 2575 | 2700 |     30 |       5 | GRASS        | sales@2017 | NULL       |        1 |
+|  7934 | MILLER   | M      | CLERK               | 7782 | 1982-01-23 | 1300 | 1300 |     10 |       2 | QUARTERNOTE  | r50mpm     | 7132300055 |        0 |
+|  7945 | AARUSH   | M      | SALESMAN            | 7902 | 1980-02-14 | 1350 | 2700 |     30 |    NULL | AARUSH       | ABCDEF     | NULL       |        0 |
+|  7949 | ALEX     | M      | MANAGER             | 7698 | 1982-01-24 | 1250 |  500 |     30 |       5 | QUARTERREST  | sales@2017 | 7156567183 |        1 |
+|  8433 | NATASHA  | F      | CLERK               | 7920 | 1981-07-19 | 1750 | NULL |     30 |       1 | NATASHA      | sales@2017 | NULL       |        1 |
+|  9400 | SANGITA  | F      | Compliance officers | 7920 | 1981-07-19 | 1750 | NULL |     50 |       1 | SANGITA      | NULL       | NULL       |        1 |
+|  9473 | SUPRIYA  | F      | ANALYST             | 7920 | 1981-07-19 | 1750 | NULL |     50 |       1 | SUPRIYA      | XYZ@1234   | NULL       |        1 |
++-------+----------+--------+---------------------+------+------------+------+------+--------+---------+--------------+------------+------------+----------+
+22 rows in set (0.03 sec)
+********************************************************************************************************************************************************************8
+14. Give SQL statement to find the average annual salary per job in each detp.
++--------+---------------------+-------------------+
+| DEPTNO | JOB                 | Avg_Annual_Salary |
++--------+---------------------+-------------------+
+|     30 | Compliance officers |        21000.0000 |
+|     50 | Compliance officers |        21000.0000 |
+|     20 | Public Relation     |        21000.0000 |
+|     20 | CLERK               |        11400.0000 |
+|     10 | CLERK               |        25600.0000 |
+|     30 | SALESMAN            |        19050.0000 |
+|     20 | MANAGER             |        35700.0000 |
+|     30 | MANAGER             |        33000.0000 |
+|     10 | MANAGER             |        29400.0000 |
+|     20 | ANALYST             |        36000.0000 |
+|     10 | PRESIDENT           |        60000.0000 |
+|     20 | vice PRESIDENT      |        60000.0000 |
+|     60 | Network             |        24000.0000 |
+|     60 | vice PRESIDENT      |        12000.0000 |
+|     30 | CLERK               |        16200.0000 |
+|     50 | ANALYST             |        21000.0000 |
++--------+---------------------+-------------------+
+16 rows in set (0.00 sec)
+*************************************************************************************************************************************************************
+15. Count the number of people in the dept 30 who receive a salary and the no.of people who
+receive comm.
+mysql> Select count(sal) as peopleCount, count(comm) as Pepolegetcomm from emp WHERE deptno=30;
++-------------+---------------+
+| peopleCount | Pepolegetcomm |
++-------------+---------------+
+|          12 |             7 |
++-------------+---------------+
+1 row in set (0.02 sec)
+**********************************************************************************************************************************************************************

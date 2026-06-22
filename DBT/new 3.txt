@@ -1,0 +1,16 @@
+Topic need to revised
+defaults argruments
+Constant Obejcts
+Constructor and destructor calling with subclasses and thier order
+
+
+
+
+
+
+
+Wpt 
+Redux;
+Express Js
+Promise
+Http method and uses

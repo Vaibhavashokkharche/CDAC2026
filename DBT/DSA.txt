@@ -1,0 +1,190 @@
+Problem Solving & Logic
+Q.1: Most critical step to address the core issue?
+
+
+Answer: B) Identify the specific problem and understand its root cause.  
+
+Q.2: Concept of "problem definition"?
+
+
+Answer: B) The phase where the goal is to outline the problem clearly and ensure it is understood.  
+
+Q.3: Importance of distinguishing symptom from cause?
+
+
+Answer: D) It ensures the problem will not reoccur by addressing both symptom and cause.  
+
+Q.4: Fundamental principle guiding a team to a solution?
+
+
+Answer: B) Analyzing and framing the problem, generating alternative solutions, and then evaluating them critically.  
+
+Q.5: Description of the "problem identification" stage?
+
+
+Answer: B) Understanding the issue, gathering relevant data, and identifying its true nature and scope.  
+
+Data Structures (Queues, Stacks, Arrays)
+Q.6: Primary disadvantage of using an array for a queue?
+
+
+Answer: D) Arrays require shifting elements when performing dequeue operations, leading to O(n) complexity for each operation.  
+
+Q.7: Complexity of merging two sorted arrays of size n?
+
+
+Answer: A) O(n) (Note: Merging 2n total elements results in linear time).  
+
+Q.8: True statement about the design of a stack?
+
+
+Answer: C) A stack defines operations for adding and removing elements in a LIFO manner, but its internal implementation can vary.  
+
+Q.9: Key feature of a circular queue?
+
+
+Answer: C) A circular queue uses a fixed-size array and wraps around when the rear reaches the end of the array.  
+
+Q.10: Primary advantage of Big O notation?
+
+
+Answer: C) It allows developers to estimate the worst-case, average-case, and best-case running time of an algorithm independently of hardware.  
+
+Linked Lists
+Q.11: Advantage of a doubly linked list over a singly linked list?
+
+
+Answer: B) A doubly linked list allows traversal in both directions, making deletion of a node more efficient when we have a reference to it.  
+
+Q.12: When is a circular linked list most advantageous?
+
+
+Answer: B) When the list needs to be traversed starting from any point and returning to the starting point after reaching the last node.  
+
+Q.13: Primary disadvantage of a linked list over an array?
+
+
+Answer: B) Linked lists require more memory for storing the data due to the need for additional pointers for each element.  
+
+Q.14: Memory management advantage of a linked list?
+
+
+Answer: C) Linked lists allow efficient dynamic memory allocation and do not require predefined memory sizes, unlike arrays.  
+
+Q.15 (Duplicate in text): When to prefer an array over a linked list?
+
+
+Answer: A) When you need fast random access to elements by index and the size of the collection is known beforehand.  
+
+Recursion & Trees
+Q.16: Primary function of a base condition?
+
+
+Answer: C) To halt the recursion and return a value when a certain condition is met, preventing infinite recursion.  
+
+Q.17: Description of indirect recursion?
+
+
+Answer: B) Indirect recursion occurs when multiple functions call each other in a cycle, leading to recursion.  
+
+Q.18: Advantage of an AVL tree over a regular BST?
+
+
+Answer: B) AVL trees automatically balance themselves, ensuring that the search time complexity is always O(logn).  
+
+Q.19: Order of Left-Root-Right traversal?
+
+
+Answer: B) In-order traversal.  
+
+Q.20: Main limitation of a BST?
+
+
+Answer: B) A BST can become unbalanced, leading to a worst-case search time of O(n) when the tree degenerates into a linked list.  
+
+Q.21: Valid application of binary trees?
+
+
+Answer: A) Representing hierarchical data such as a file system.  
+
+Sorting & Searching
+Q.22: Primary advantage of binary search over sequential search?
+
+
+Answer: B) Binary search reduces the time complexity to O(logn) compared to the O(n) complexity of sequential search, but only if the data is sorted.  
+
+Q.23: Sorting algorithm with the best average-case complexity?
+
+
+Answer: C) Quicksort.  
+
+Q.24: Why is Quicksort preferred despite O(n 
+2
+ ) worst-case?
+
+
+Answer: B) Quicksort has an average-case time complexity of O(nlogn), which makes it faster in most practical scenarios compared to other O(nlogn) algorithms.  
+
+Q.25: Efficient for small or nearly sorted data but O(n 
+2
+ ) worst-case?
+
+
+Answer: D) Insertion sort.  
+
+Q.26: Preference for Selection Sort?
+
+
+Answer: B) When memory space is extremely limited, and the algorithm must run in-place with constant space complexity.  
+
+Hashing & Graphs
+Q.27: Primary advantage of a hash table for search?
+
+
+Answer: B) Hash tables reduce the time complexity to O(1) for search operations, assuming good hash function distribution and low collisions.  
+
+Q.28: Main problem with simple hash functions?
+
+
+Answer: A) A bad hash function can lead to clustering, where many keys map to the same index, increasing the likelihood of collisions and degrading performance.  
+
+Q.29: Strategy using a secondary hash function?
+
+
+Answer: C) Double hashing.  
+
+Q.30: Time complexity of accessing an element in an adjacency matrix?
+
+
+Answer: A) O(1).  
+
+Q.31: Algorithm exploring vertices level by level?
+
+
+Answer: B) Breadth First Search.  
+
+Q.32: Main advantage of adjacency list for sparse graphs?
+
+
+Answer: A) Adjacency lists use less memory in sparse graphs.  
+
+Q.33: When does Dijkstra's algorithm fail?
+
+
+Answer: A) When there are negative edge weights.  
+
+General Algorithm Concepts
+Q.34: Objective of a brute-force algorithm?
+
+
+Answer: B) To explore all possible solutions without using any heuristics.  
+
+Q.35: Difference between time and space complexity?
+
+
+Answer: A) Time complexity refers to the number of operations performed, while space complexity refers to the memory used.  
+
+Q.36: Complexity of accessing an element in a linked list?
+
+
+Answer: C) O(n).

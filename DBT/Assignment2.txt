@@ -1,0 +1,207 @@
+1)>>>Display thnd Start Date of Employees hired from February 1981 to May 1981.
+hiredate BETWEEN 1981/05/01 AND 1981/05/30' at line 1
+mysql> SELECT ename, hiredate from emp WHERE hiredate BETWEEN '1981-02-01' AND '1981-05-31';
++-------+------------+
+| ename | hiredate   |
++-------+------------+
+| ALLEN | 1981-02-20 |
+| WARD  | 1981-02-22 |
+| JONES | 1981-04-02 |
+| BLAKE | 1981-05-01 |
++-------+------------+
+4 rows in set (0.04 sec)
+
+8****************************************************************************************************
+
+2) >>>Display the Name and Hiredate of every Employee who was hired in 1982.
+    -> ^C
+mysql> SELECT ename, hiredate from emp WHERE YEAR(Hiredate)=1982;
++---------+------------+
+| ename   | hiredate   |
++---------+------------+
+| SCOTT   | 1982-12-09 |
+| HOFFMAN | 1982-03-24 |
+| MILLER  | 1982-01-23 |
+| ALEX    | 1982-01-24 |
++---------+------------+
+4 rows in set (0.02 sec)
+
+***************************************************************************************************
+
+3)>>Write a query to display the current date. Label the column as Current Date.
+
+mysql> Select CURDATE() as CurrentDate;
++-------------+
+| CurrentDate |
++-------------+
+| 2026-04-18  |
++-------------+
+1 row in set (0.03 sec)
+
+********************************************************************************************************
+4)>>>Display the Employee’s Name, Hiredate, Salary and Review Date, which is first Monday after six months of service. 
+    -> ^C
+mysql> Select Ename ,hiredate,salary , hiredate + INTERVAL 6 MONTH from emp;
+ERROR 1054 (42S22): Unknown column 'salary' in 'field list'
+mysql> Select Ename ,hiredate,sal , hiredate + INTERVAL 6 MONTH from emp;
++----------+------------+------+-----------------------------+
+| Ename    | hiredate   | sal  | hiredate + INTERVAL 6 MONTH |
++----------+------------+------+-----------------------------+
+| GITA     | 1981-07-19 | 1750 | 1982-01-19                  |
+| VRUSHALI | 1981-07-19 | 1750 | 1982-01-19                  |
+| SHARMIN  | 1981-07-19 | 1750 | 1982-01-19                  |
+| BANDISH  | 1981-07-19 | 1750 | 1982-01-19                  |
+| SMITH    | 1980-12-17 |  800 | 1981-06-17                  |
+| AARAV    | 1981-12-31 | 3350 | 1982-06-30                  |
+| THOMAS   | 1981-07-19 | 1750 | 1982-01-19                  |
+| ALLEN    | 1981-02-20 | 1600 | 1981-08-20                  |
+| WARD     | 1981-02-22 | 1250 | 1981-08-22                  |
+| JONES    | 1981-04-02 | 2975 | 1981-10-02                  |
+| MARTIN   | 1981-09-28 | 1250 | 1982-03-28                  |
+| BLAKE    | 1981-05-01 | 2850 | 1981-11-01                  |
+| CLARK    | 1981-06-09 | 2450 | 1981-12-09                  |
+| SCOTT    | 1982-12-09 | 3000 | 1983-06-09                  |
+| KING     | 1981-11-17 | 5000 | 1982-05-17                  |
+| FRED     | 1983-08-09 | 5000 | 1984-02-09                  |
+| TURNER   | 1981-09-08 | 1500 | 1982-03-08                  |
+| ADAMS    | 1983-01-12 | 1100 | 1983-07-12                  |
+| Ruhan    | 1983-08-09 | 2000 | 1984-02-09                  |
+| Neel     | 1983-08-09 | 1000 | 1984-02-09                  |
+| JAMES    | 1981-12-03 |  950 | 1982-06-03                  |
+| FORD     | 1981-12-03 | 3000 | 1982-06-03                  |
+| HOFFMAN  | 1982-03-24 | 4150 | 1982-09-24                  |
+| GRASS    | 1980-02-14 | 2575 | 1980-08-14                  |
+| MILLER   | 1982-01-23 | 1300 | 1982-07-23                  |
+| AARUSH   | 1980-02-14 | 1350 | 1980-08-14                  |
+| ALEX     | 1982-01-24 | 1250 | 1982-07-24                  |
+| NATASHA  | 1981-07-19 | 1750 | 1982-01-19                  |
+| SANGITA  | 1981-07-19 | 1750 | 1982-01-19                  |
+| SUPRIYA  | 1981-07-19 | 1750 | 1982-01-19                  |
++----------+------------+------+-----------------------------+
+30 rows in set (0.00 sec)
+***********************************************************************************************************
+
+6)>>Create a query to display the name and salary for all Employees. Format the salary to be 15 characters long by adding ‘$’.
+
+mysql> SELECT ename, LPAD(sal,15,'$') from emp;
++----------+------------------+
+| ename    | LPAD(sal,15,'$') |
++----------+------------------+
+| GITA     | $$$$$$$$$$$1750  |
+| VRUSHALI | $$$$$$$$$$$1750  |
+| SHARMIN  | $$$$$$$$$$$1750  |
+| BANDISH  | $$$$$$$$$$$1750  |
+| SMITH    | $$$$$$$$$$$$800  |
+| AARAV    | $$$$$$$$$$$3350  |
+| THOMAS   | $$$$$$$$$$$1750  |
+| ALLEN    | $$$$$$$$$$$1600  |
+| WARD     | $$$$$$$$$$$1250  |
+| JONES    | $$$$$$$$$$$2975  |
+| MARTIN   | $$$$$$$$$$$1250  |
+| BLAKE    | $$$$$$$$$$$2850  |
+| CLARK    | $$$$$$$$$$$2450  |
+| SCOTT    | $$$$$$$$$$$3000  |
+| KING     | $$$$$$$$$$$5000  |
+| FRED     | $$$$$$$$$$$5000  |
+| TURNER   | $$$$$$$$$$$1500  |
+| ADAMS    | $$$$$$$$$$$1100  |
+| Ruhan    | $$$$$$$$$$$2000  |
+| Neel     | $$$$$$$$$$$1000  |
+| JAMES    | $$$$$$$$$$$$950  |
+| FORD     | $$$$$$$$$$$3000  |
+| HOFFMAN  | $$$$$$$$$$$4150  |
+| GRASS    | $$$$$$$$$$$2575  |
+| MILLER   | $$$$$$$$$$$1300  |
+| AARUSH   | $$$$$$$$$$$1350  |
+| ALEX     | $$$$$$$$$$$1250  |
+| NATASHA  | $$$$$$$$$$$1750  |
+| SANGITA  | $$$$$$$$$$$1750  |
+| SUPRIYA  | $$$$$$$$$$$1750  |
++----------+------------------+
+30 rows in set (0.03 sec)
+************************************************************************************************************************
+
+
+7) >>Display the Name, Hiredate and day of the week on which the employees started. Order the results by the e Employee Name, Job, aDay of the week starting with Monday.
+
+
+mysql> Select ename , hiredate, job, DayNAME(hiredate) as DayofWeek from emp order by job and ename;
++----------+------------+---------------------+-----------+
+| ename    | hiredate   | job                 | DayofWeek |
++----------+------------+---------------------+-----------+
+| GITA     | 1981-07-19 | Compliance officers | Sunday    |
+| VRUSHALI | 1981-07-19 | Compliance officers | Sunday    |
+| SHARMIN  | 1981-07-19 | Public Relation     | Sunday    |
+| BANDISH  | 1981-07-19 | Public Relation     | Sunday    |
+| SMITH    | 1980-12-17 | CLERK               | Wednesday |
+| AARAV    | 1981-12-31 | CLERK               | Thursday  |
+| THOMAS   | 1981-07-19 | CLERK               | Sunday    |
+| ALLEN    | 1981-02-20 | SALESMAN            | Friday    |
+| WARD     | 1981-02-22 | SALESMAN            | Sunday    |
+| JONES    | 1981-04-02 | MANAGER             | Thursday  |
+| MARTIN   | 1981-09-28 | SALESMAN            | Monday    |
+| BLAKE    | 1981-05-01 | MANAGER             | Friday    |
+| CLARK    | 1981-06-09 | MANAGER             | Tuesday   |
+| SCOTT    | 1982-12-09 | ANALYST             | Thursday  |
+| KING     | 1981-11-17 | PRESIDENT           | Tuesday   |
+| FRED     | 1983-08-09 | vice PRESIDENT      | Tuesday   |
+| TURNER   | 1981-09-08 | SALESMAN            | Tuesday   |
+| ADAMS    | 1983-01-12 | CLERK               | Wednesday |
+| Ruhan    | 1983-08-09 | Network             | Tuesday   |
+| Neel     | 1983-08-09 | vice PRESIDENT      | Tuesday   |
+| JAMES    | 1981-12-03 | CLERK               | Thursday  |
+| FORD     | 1981-12-03 | ANALYST             | Thursday  |
+| HOFFMAN  | 1982-03-24 | MANAGER             | Wednesday |
+| GRASS    | 1980-02-14 | SALESMAN            | Thursday  |
+| MILLER   | 1982-01-23 | CLERK               | Saturday  |
+| AARUSH   | 1980-02-14 | SALESMAN            | Thursday  |
+| ALEX     | 1982-01-24 | MANAGER             | Sunday    |
+| NATASHA  | 1981-07-19 | CLERK               | Sunday    |
+| SANGITA  | 1981-07-19 | Compliance officers | Sunday    |
+| SUPRIYA  | 1981-07-19 | ANALYST             | Sunday    |
++----------+------------+---------------------+-----------+
+30 rows in set, 30 warnings (0.01 sec)
+
+****************************************************************************************************
+8)>>>
+
+
+
+
+
+
+
+
+
+
+
+************************************************************************************************************
+9)>>>Write a query to find out the DAY (for example, SUNDAY) of the current date.
+
+mysql> Select DayName(now());
++----------------+
+| DayName(now()) |
++----------------+
+| Monday         |
++----------------+
+1 row in set (0.00 sec)
+
+9) >>>>
+
+mysql> Display details of orders received in the year 1981.
+    -> ^C
+mysql> SELECT * from orders where Year(orderdate)=1981;
+ERROR 1054 (42S22): Unknown column 'orderdate' in 'where clause'
+mysql> SELECT * from orders where Year(odate)=1981;
+Empty set (0.00 sec)
+
+mysql>
+***********************************************************************************************************
+
+10)>>>Display the name and the date of joining of the employees who belong to department number 10. The date of joining should be formatted. For eg. if it is ‘10-JUN-97’ it should be displayed as Fifteenth JUNE, 1997. The name of the employee should be in upper case.
+
+
+
+*****************************************************************************************************
+
+11)>>Consider the Ord table. Find the difference between the Order Date and Ship Date in months as well as days. Label the columns appropriately.
