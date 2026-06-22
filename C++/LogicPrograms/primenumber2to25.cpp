@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+int i,j, num, count, primefound=0, n=2;
+cout<<"Enter the how many first prime number you want\n";
+cin>>num;
+for(i=; i<=n;i++){
+    count=0;
+for(int j=1;j<=i;j++){
+if(i%j==0){
+count++;
+}
+
+}
+
+if(count==2){
+    cout<<"  "<<i;
+    primefound++;
+}
+
+if(primefound==num){
+    break;
+}
+n++;
+}
+
+}

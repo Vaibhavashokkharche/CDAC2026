@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+//swap number without using third variable
+void SwapNumber(int a , int b){
+cout<<"The value of a and b before swapping "<<a<<" "<<b<<endl;
+a=a-b;
+b=a-b;
+cout<<"The value of a and b after swapping "<<a<<" "<<b<<endl;
+
+}
