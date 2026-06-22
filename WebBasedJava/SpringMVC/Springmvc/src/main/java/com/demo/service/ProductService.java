@@ -1,0 +1,21 @@
+package com.demo.service;
+
+import java.util.List;
+
+import com.demo.beans.Product;
+
+import jakarta.validation.Valid;
+
+public interface ProductService {
+
+	List<Product> getAllProduct();
+
+	boolean insertNewProduct( Product product);
+
+	Product getProductById(int pid);
+
+	boolean updateProductById( Product product);
+
+	boolean deleteById(int pid);
+
+}

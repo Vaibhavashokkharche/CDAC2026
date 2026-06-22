@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;myspringconfig.xml&apos; to &apos;CollectionUsingXmlConfiguration/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;MySpringProject&apos;&#x0D;&#x0A;- Destination element: &apos;CollectionUsingXmlConfiguration/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;myspringconfig.xml&apos;" description="Copy file" destination="=CollectionUsingXmlConfiguration/src\/main\/resources=/maven.pomderived=/true=/=/optional=/true=/" element1="src/main/resources/myspringconfig.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1780394068792" units="0" version="1.0"/>
+</session>

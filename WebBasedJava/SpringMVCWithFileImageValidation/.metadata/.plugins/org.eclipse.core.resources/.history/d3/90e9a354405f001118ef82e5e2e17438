@@ -1,0 +1,14 @@
+package com.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.demo.dao.LoginDao;
+
+public class LoginServiceImpl implements LoginService {
+     @Autowired
+	private LoginDao ldao;
+	
+	
+	
+	
+}

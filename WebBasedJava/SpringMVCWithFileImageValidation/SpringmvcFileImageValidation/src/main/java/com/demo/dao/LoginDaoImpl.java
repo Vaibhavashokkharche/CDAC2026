@@ -1,0 +1,37 @@
+package com.demo.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.demo.beans.MyUser;
+@Repository
+public class LoginDaoImpl implements LoginDao {
+@Autowired
+private JdbcTemplate jdbctemplete;
+
+@Override
+public MyUser authenticateUser(String uname, String pass) {
+
+	MyUser user = jdbctemplete.queryForObject("Select username, role from myuser where username=? and password=?",
+			new Object[] { uname, pass }, (rs, num) -> {
+				MyUser u = new MyUser();
+				u.setUsername(rs.getString(1));
+				u.setRole(rs.getString(2));
+
+				return u;
+			}
+
+	);
+
+	return user;
+}
+
+
+
+
+
+
+
+
+}

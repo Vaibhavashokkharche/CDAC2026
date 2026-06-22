@@ -1,0 +1,74 @@
+package com.demo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.demo.beans.Product;
+
+import jakarta.validation.Valid;
+
+@Repository
+public class ProductDaoImpl implements ProductDao {
+	@Autowired
+	private JdbcTemplate jdbctemplete;
+
+	@Override
+	public List<Product> findAllProduct() {
+		List<Product> plist = jdbctemplete.query("select * from product1", (rs, num) -> {
+			System.out.println("in find all product");
+			Product p = new Product();
+			p.setPid(rs.getInt(1));
+			p.setPname(rs.getString(2));
+			p.setQty(rs.getInt(3));
+			p.setPrice(rs.getDouble(4));
+			p.setmfgdate(rs.getDate(5).toLocalDate());
+			p.setCid(rs.getInt(6));
+			return p;
+		});
+		return plist;
+	}
+
+	@Override
+	public boolean addNewProduct(Product p) {
+		System.out.println(p.getmfgdate());
+
+		int n = jdbctemplete.update("insert into product1 values(?,?,?,?,?,?)",
+				new Object[] { p.getPid(), p.getPname(), p.getQty(), p.getPrice(), p.getmfgdate(), p.getCid() });
+		return n > 0;
+	}
+
+	@Override
+	public Product findProductById(int pid) {
+		Product p = new Product();
+		Product p1 = jdbctemplete.queryForObject("Select * from product1 where pid=?", new Object[] { pid },
+				(rs, num) -> {
+					p.setPid(rs.getInt(1));
+					p.setPname(rs.getString(2));
+					p.setQty(rs.getInt(3));
+					p.setPrice(rs.getDouble(4));
+					p.setmfgdate(rs.getDate(5).toLocalDate());
+					p.setCid(rs.getInt(6));
+					return p;
+				});
+		return p1;
+	}
+
+	@Override
+	public boolean modifiedById(Product product) {
+		
+		int n=jdbctemplete.update("update Product1 set qty=? ,pname=? where pid=?" ,new Object[] {product.getQty(), product.getPname(),product.getPid()});
+		return n>0;
+	}
+
+	@Override
+	public boolean removeById(int pid) {
+		int n =jdbctemplete.update("Delete from product1 where pid=?", new Object[] {pid});
+		
+		return n>0;
+	}
+
+}

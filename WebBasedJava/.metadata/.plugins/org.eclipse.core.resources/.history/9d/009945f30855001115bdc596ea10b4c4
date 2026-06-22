@@ -1,0 +1,38 @@
+package com.demo.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		 PrintWriter out=response.getWriter();
+		String uname=request.getParameter("uname");
+		String pass= request.getParameter("pass");
+		if(uname.equals("Vaibhav") && pass.equals("Vaibhav")) {
+			out.println("You are admin");
+		}
+		else if(uname.equals("Rushikesh")&&pass.equals("Rushikesh")) {
+			out.println("you are user access");
+		}
+		else {
+			out.println("please try to relogin Invalid creditional");
+			RequestDispatcher r=request.getRequestDispatcher("index.html");
+			r.include(request, response);
+		}
+	}
+	
+  @Override
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	doGet();
+}
+}

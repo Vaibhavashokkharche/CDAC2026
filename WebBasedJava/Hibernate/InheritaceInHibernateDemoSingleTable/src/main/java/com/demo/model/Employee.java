@@ -1,0 +1,44 @@
+package com.demo.model;
+
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("Employee")
+public class Employee extends Person {
+
+	private double sal;
+	private int deptno;
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(int id, String name, String mob,double sal, int deptno) {
+		super(id,name,mob);
+		this.sal = sal;
+		this.deptno = deptno;
+	}
+
+	public double getSal() {
+		return sal;
+	}
+
+	public int getDeptno() {
+		return deptno;
+	}
+
+	public void setSal(double sal) {
+		this.sal = sal;
+	}
+
+	public void setDeptno(int deptno) {
+		this.deptno = deptno;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [sal=" + sal + ", deptno=" + deptno + "]";
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.demo.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.demo.model.Address;
+import com.demo.service.AddressServiceImpl;
+
+public class AddressDaoImpl implements AddressDao {
+	private SessionFactory sf;
+	{
+		sf=HibernateUtil.getMySessionFactory();
+	}
+
+	@Override
+	public boolean addNewAddress(Address addr) {
+		Session session=sf.openSession();
+		Transaction tr=session.beginTransaction();
+		session.persist(addr);
+		tr.commit();
+		sf.close();
+	
+		
+		return true;
+	}
+
+	@Override
+	public boolean displayByAddress(int aid) {
+		Session session=sf.openSession();
+		Transaction tr=session.beginTransaction();
+		Address addr= session.persist(Address.class ,aid);
+		return false;
+	}
+
+	
+
+}

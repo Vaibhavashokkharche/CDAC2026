@@ -1,0 +1,126 @@
+package com.demo.test;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.model.Product;
+import com.demo.service.LoginService;
+import com.demo.service.LoginServiceImpl;
+import com.demo.service.ProductService;
+import com.demo.service.ProductServiceImpl;
+
+public class TestCrudApplication {
+	public static void main(String[] args) {
+		ProductService pservice=new ProductServiceImpl();
+		LoginService lservice = new LoginServiceImpl();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the username");
+		String uname = sc.nextLine();
+		System.out.println("enter the Password");
+		String pwd = sc.nextLine();
+
+		String role = lservice.validateUser(uname, pwd);
+		if (role != null) {
+			System.out.println("you have a " + role + "  access");
+		} else {
+			System.out.println("Something went wrong");
+			
+		}
+
+		if (role.equals("admin")) {
+           int choice=0;
+           do {
+        	   
+			
+				System.out.println("1. Add new Product\n2. Delete product by id\n3. Update product by id");
+				System.out.println("4. Display All\n 5. Display by id \n 6. display in sorted order\n 7.exit\n Choice :");
+        	   choice=sc.nextInt();
+        	   switch(choice) {
+        	   case 1->{
+        		   boolean status =pservice.addNewProduct();
+        		   System.out.println(status?"product added":"Error occured");
+        	   }
+        	   case 2->{
+        		   System.out.println("enter the id");
+        		   int id=sc.nextInt();
+        		   boolean status =pservice.deletebyid(id);
+        		   System.out.println(status?"Deleted successfully":"Not found");
+        		   
+        	   }
+        	   case 3->{
+        		   System.out.println("enter the id");
+        		   int id =sc.nextInt();
+        		   System.out.println("enter pname");
+        		   String nm=sc.next();
+        		   boolean status =pservice.updateById(id,nm);
+        		   System.out.println(status?"updted successfully":"Not found");
+        	   }
+        	   case 4->{
+        		   List<Product>plist=pservice.getAll();
+        		   if(plist!=null) {
+        			   plist.forEach(System.out::println);
+        		   }else {
+        			   System.out.println("No data found");
+        		   }
+        	   }
+        	   case 5->{
+        		   System.out.println("enter id");
+        		   int id =sc.nextInt();
+        		   Product p= pservice.displayById(id);
+        		   if(p!=null) {
+        			   System.out.println(p);
+        		   }else {
+        			   System.out.println("not found");
+        		   }
+        		   
+        	   }
+        	   case 6->{
+        		 List<Product> plist=pservice.displayAsSorted();
+        		 if(plist!=null) {
+        			 plist.forEach(System.out::println);
+        		 }else {
+        			 System.out.println("Data not Found");
+        		 }
+        		   
+        	   }
+        	   case 7->{
+        		   System.out.println("Thanks for visting..!!");
+        		  lservice.closeConnection();
+        		  sc.close();
+        	   }
+        	   default->{
+        		   System.out.println("invalid choice");
+        	   }
+        	   }
+        	   
+           }while(choice!=7);
+		}
+		if(role.equals("user")) {
+			int choice=0;
+			do {
+			System.out.println("1.Display All\2.Exit\n Enter a choice");
+			choice=sc.nextInt();
+			switch(choice) {
+			case 1->{
+				List<Product>plist=pservice.getAll();
+     		   if(plist!=null) {
+     			   plist.forEach(System.out::println);
+     		   }else {
+     			   System.out.println("No data found");
+     		   }
+			}
+			case 2 ->{
+				 System.out.println("Thanks for visting..!!");
+       		  lservice.closeConnection();
+       		  sc.close();;
+			}
+			default ->{
+				System.out.println("Invalid choice");
+			}
+			}
+			}while(choice!=2);
+		}
+
+	}
+
+}

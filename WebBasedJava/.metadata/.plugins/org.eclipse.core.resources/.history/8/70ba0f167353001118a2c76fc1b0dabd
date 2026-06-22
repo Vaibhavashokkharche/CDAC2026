@@ -1,0 +1,144 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.demo.model.Product;
+import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
+import com.mysql.cj.xdevapi.Result;
+
+public class ProductDaoImpl implements ProductDao {
+	static Connection conn;
+	static {
+		conn = DBUtil.getconnection();
+
+	}
+
+	@Override
+	public boolean save(Product p) {
+		try {
+			PreparedStatement pst = conn.prepareStatement("Insert into product1 values(?,?,?,?,?)");
+			pst.setInt(1, p.getPid());
+			pst.setString(2, p.getPname());
+			pst.setInt(3, p.getQty());
+			pst.setDouble(4, p.getPrice());
+			java.sql.Date sqldate = java.sql.Date.valueOf(p.getLdt());
+			pst.setDate(5, sqldate);
+			int n = pst.executeUpdate();
+			if (n > 0) {
+				return true;
+			}
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
+	@Override
+	public boolean removebyid(int id) {
+		try {
+			PreparedStatement pst = conn.prepareStatement("Delete from product1 where pid=?");
+			pst.setInt(1, id);
+			int n = pst.executeUpdate();
+			if (n > 0) {
+				return true;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
+	@Override
+	public boolean modifiedById(int id, String nm) {
+		try {
+			PreparedStatement pst = conn.prepareStatement("update product set ename=? where pid=? ");
+			pst.setString(1, nm);
+			pst.setInt(2, id);
+			int n = pst.executeUpdate();
+			if (n > 0) {
+				return true;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	@Override
+	public List<Product> findAll() {
+		List<Product> plist = new ArrayList<>();
+		try {
+			PreparedStatement pst = conn.prepareStatement("Select* from product1");
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				java.sql.Date dt = rs.getDate(5);
+				LocalDate ldt = dt.toLocalDate();
+				Product p = new Product(rs.getInt(1), rs.getString(2), rs.getInt(1), rs.getDouble(4), ldt);
+				plist.add(p);
+			}
+			if (plist != null) {
+				return plist;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	@Override
+	public Product findByid(int id) {
+		try {
+			PreparedStatement pst=conn.prepareStatement("Select * from product1 where id=?");
+			pst.setInt(1, id);
+			ResultSet rs=pst.executeQuery();
+			if(rs.next()) {
+				LocalDate ldt= rs.getDate(5).toLocalDate();
+				Product p= new Product(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getDouble(4),ldt);
+				return p;
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	}
+
+	@Override
+	public List<Product> displayAsSorted() {
+		try {
+			List<Product>plist=new ArrayList<>();
+			PreparedStatement pst=conn.prepareStatement("Select* from product1 order by price");
+			ResultSet rs=pst.executeQuery();
+			while(rs.next()) {
+				LocalDate ldt=rs.getDate(5).toLocalDate();
+				Product p=new Product(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getDouble(4),ldt);
+				plist.add(p);
+			}
+			if(plist!=null) {
+				return plist;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+}

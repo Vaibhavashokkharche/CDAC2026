@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	<!-- <Setter injection of MyUser classs (setter method and default constructor must be in class)> -->
+<bean id="m1" class="com.demo.beans.MyUser">
+<property name="uid" value="1"></property>
+<property name="uname" value="Vaibhav"></property>
+<property name="mob" value="7218964006"></property>
+</bean>
+		
+<!-- create LocalDate Object -->
+	 <bean id="date1"    class="java.time.LocalDate"  factory-method="parse">
+        <constructor-arg value="2026-01-10"/>
+    </bean>
+<!-- Setter injection f product class -->
+<bean id="p1" class="com.demo.beans.Product">
+<property name="pid" value="1"></property>
+<property name="pname"  value="Sugar"></property>
+<property name="qty" value="1"></property>
+<property name="price" value="42.50"></property>
+<property name="ldt" ref="dat1"> </property>
+</bean>
+
+<bean id="p2" class="com.demo.beans.Product">
+<property name="pid" value="1"></property>
+<property name="pname"  value="Tea"></property>
+<property name="qty" value="1"></property>
+<property name="price" value="420.50"></property>
+<property name="ldt" ref="dat1"> </property>
+</bean>
+
+
+<!-- Setter injection of customer class -->
+<bean id="c1" class="com,demo.beans.Customer">
+
+<property name="cid" value="101"></property>
+<property name="cname" value="Vaibhav"></property>
+<property name="addlist">
+<list>
+<value>Charholi</value>
+<value>Aundh</value>
+<value>Pashan</value>
+<value>Balewadi</value>
+</list>
+</property>
+<property name="orderlist">
+<list>
+<ref bean="p1"/>
+<ref bean="p2"/>
+
+</list>
+</property>
+
+</bean>
+	
+</beans>

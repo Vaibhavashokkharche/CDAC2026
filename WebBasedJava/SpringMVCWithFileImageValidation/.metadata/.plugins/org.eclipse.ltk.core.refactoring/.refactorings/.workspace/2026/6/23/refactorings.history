@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Springmvc&apos; to &apos;SpringmvcFileImageValidation&apos;" description="Rename resource &apos;Springmvc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Springmvc" name="SpringmvcFileImageValidation" stamp="1780741865211" updateReferences="true"/>
+</session>

@@ -1,0 +1,17 @@
+INDEX VERSION 1.132
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1949933425.index
+\CalculateJspDemo\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1853290662.index
+\JSPUseBeanDemo\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4087051930.index
+\ProductCartDemo\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2647104742.index
+\ProductManagementSystem\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2139903453.index
+\Calculatedemo\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3955658720.index
+\Calculatedemo1\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\397531371.index
+\Productcartdemo\src\main\java
+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1701840342.index
+\CalculateDemo\src\main\java

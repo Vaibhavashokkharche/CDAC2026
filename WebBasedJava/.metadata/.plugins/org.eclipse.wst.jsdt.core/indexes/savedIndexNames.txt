@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+D:\CDAC 2026\WebBasedJava\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3658069779.index
+3241674820.index
+3862595303.index
+691898000.index
+935368722.index
+2017241090.index
+3531489876.index
+507085213.index
+2818865685.index
+1302950001.index

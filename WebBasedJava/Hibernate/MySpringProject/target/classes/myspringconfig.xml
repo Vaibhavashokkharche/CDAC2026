@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	<!-- <Setter injection of MyUser classs (setter method and default constructor must be in class)> -->
+<bean id="m1" class="com.demo.beans.MyUser">
+<property name="uid" value="1"></property>
+<property name="uname" value="Vaibhav"></property>
+<property name="mob" value="7218964006"></property>
+</bean>
+		
+<!-- create LocalDate Object -->
+	 <bean id="date1"    class="java.time.LocalDate"  factory-method="parse">
+        <constructor-arg value="2026-01-10"/>
+    </bean>
+	<!-- Setter injection of product class -->
+	<bean id="p1" class="com.demo.beans.Product" scope="prototype">
+	<property name="pid" value="1"></property>
+	<property name="pname" value="AmulIceCream"></property>
+	<property name="qty" value="1"></property>
+	<property name="price" value="234.50"></property>
+	<!-- so now local date is an object so we need create seperate beans for class local date and the then assign the id as ref to local date property -->
+	<property name="ldt" ref="date1"></property> <!--  this is wiring calling a bean in another beans is called as wirirng -->
+	</bean>
+	<!-- Contsructor injection -->
+	<bean id="p2" class="com.demo.beans.Product">
+	<constructor-arg index="0" value="12"></constructor-arg>
+	<constructor-arg index="1" value="DairyDayIceCream"/>
+	<constructor-arg index="2" value="1"/>
+	<constructor-arg index="3" value="199.70"/>
+	<constructor-arg index="4" ref="date1"/>
+	</bean>
+	
+</beans>

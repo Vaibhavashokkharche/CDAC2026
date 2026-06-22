@@ -1,0 +1,19 @@
+package com.demo.dao;
+
+import java.util.List;
+
+import com.demo.beans.Product;
+
+import jakarta.validation.Valid;
+
+public interface ProductDao {
+
+	List<Product> findAllProduct();
+
+	boolean addNewProduct(Product product);
+
+	Product findProductById(int pid);
+
+	boolean modifiedById(@Valid Product product);
+
+}
