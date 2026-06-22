@@ -1,0 +1,7 @@
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\bin\Debug\02Demo.exe.config
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\bin\Debug\02Demo.exe
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\bin\Debug\02Demo.pdb
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\obj\Debug\02Demo.csproj.AssemblyReference.cache
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\obj\Debug\02Demo.csproj.CoreCompileInputs.cache
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\obj\Debug\02Demo.exe
+D:\CDAC 2026\MS.NET\CSharpDemos26-20260616T085803Z-3-001\CSharpDemos26\02Demo\obj\Debug\02Demo.pdb

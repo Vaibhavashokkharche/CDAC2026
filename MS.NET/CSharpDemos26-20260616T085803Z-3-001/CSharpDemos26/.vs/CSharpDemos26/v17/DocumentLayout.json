@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8020159-7C31-41C7-BE5B-0458A307A11F}|05Demo_OOP\\05Demo_OOP.csproj|d:\\cdac 2026\\ms.net\\csharpdemos26-20260616t085803z-3-001\\csharpdemos26\\05demo_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8020159-7C31-41C7-BE5B-0458A307A11F}|05Demo_OOP\\05Demo_OOP.csproj|solutionrelative:05demo_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58D66B08-735D-42FF-A3FC-27F88F4C05FA}|04Demo_OOP\\04Demo_OOP.csproj|d:\\cdac 2026\\ms.net\\csharpdemos26-20260616t085803z-3-001\\csharpdemos26\\04demo_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58D66B08-735D-42FF-A3FC-27F88F4C05FA}|04Demo_OOP\\04Demo_OOP.csproj|solutionrelative:04demo_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AC1C938-7C2D-4EB7-8865-E348C9445C9C}|03Demo_DataTypes\\03Demo_DataTypes.csproj|d:\\cdac 2026\\ms.net\\csharpdemos26-20260616t085803z-3-001\\csharpdemos26\\03demo_datatypes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AC1C938-7C2D-4EB7-8865-E348C9445C9C}|03Demo_DataTypes\\03Demo_DataTypes.csproj|solutionrelative:03demo_datatypes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AC1C938-7C2D-4EB7-8865-E348C9445C9C}|03Demo_DataTypes\\03Demo_DataTypes.csproj|d:\\cdac 2026\\ms.net\\csharpdemos26-20260616t085803z-3-001\\csharpdemos26\\03demo_datatypes\\03demo_datatypes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7AC1C938-7C2D-4EB7-8865-E348C9445C9C}|03Demo_DataTypes\\03Demo_DataTypes.csproj|solutionrelative:03demo_datatypes\\03demo_datatypes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0551F81C-EBC1-4462-8FEF-B564731BCFE3}|02Demo\\02Demo.csproj|D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\02demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0551F81C-EBC1-4462-8FEF-B564731BCFE3}|02Demo\\02Demo.csproj|solutionrelative:02demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF14B0E4-63B6-4D3B-ABC7-73B0F0EA5A79}|01Demo\\01Demo.csproj|d:\\cdac 2026\\ms.net\\csharpdemos26-20260616t085803z-3-001\\csharpdemos26\\01demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF14B0E4-63B6-4D3B-ABC7-73B0F0EA5A79}|01Demo\\01Demo.csproj|solutionrelative:01demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\05Demo_OOP\\Program.cs",
+              "RelativeDocumentMoniker": "05Demo_OOP\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\05Demo_OOP\\Program.cs",
+              "RelativeToolTip": "05Demo_OOP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T11:00:18.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\04Demo_OOP\\Program.cs",
+              "RelativeDocumentMoniker": "04Demo_OOP\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\04Demo_OOP\\Program.cs",
+              "RelativeToolTip": "04Demo_OOP\\Program.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T10:00:05.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\03Demo_DataTypes\\Program.cs",
+              "RelativeDocumentMoniker": "03Demo_DataTypes\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\03Demo_DataTypes\\Program.cs",
+              "RelativeToolTip": "03Demo_DataTypes\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwEwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T09:01:46.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "03Demo_DataTypes.csproj",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\03Demo_DataTypes\\03Demo_DataTypes.csproj",
+              "RelativeDocumentMoniker": "03Demo_DataTypes\\03Demo_DataTypes.csproj",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\03Demo_DataTypes\\03Demo_DataTypes.csproj",
+              "RelativeToolTip": "03Demo_DataTypes\\03Demo_DataTypes.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-16T09:01:42.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\02Demo\\Program.cs",
+              "RelativeDocumentMoniker": "02Demo\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\02Demo\\Program.cs",
+              "RelativeToolTip": "02Demo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T09:01:00.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\01Demo\\Program.cs",
+              "RelativeDocumentMoniker": "01Demo\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\MS.NET\\CSharpDemos26-20260616T085803Z-3-001\\CSharpDemos26\\01Demo\\Program.cs",
+              "RelativeToolTip": "01Demo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T09:00:35.674Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
