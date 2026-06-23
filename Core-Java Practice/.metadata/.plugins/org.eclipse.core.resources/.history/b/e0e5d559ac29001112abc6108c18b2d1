@@ -1,0 +1,12 @@
+package com.day2;
+
+import java.util.Date;
+
+public class TestStudent {
+	public static void main(String[] args) {
+		Student st=new Student(101,"Vaibhav",67,89,99,new Date());
+	System.out.println(st.display());
+	}
+};
+
+

@@ -1,0 +1,28 @@
+package com.day3;
+
+public class Testarray {
+	public static void main(String[] args) {
+		int a[] = { 10, 69, 89, 75, 45, 63 };
+
+		//ArrayService.accpectdata(a);
+		ArrayService.displayData(a);
+		System.out.println(ArrayService.searchData(a, 21));
+		System.out.println("SumofArrayElements:"+ArrayService.findSum(a));
+		System.out.println("Found Pos:"+ArrayService.searchData(a, 63));
+		System.out.println("MaximumNumber:"+ArrayService.findMax(a));
+		System.out.println("MinimumNumber:"+ArrayService.findMin(a));
+		System.out.println("Addition of every Digit:");
+		int ar[]=ArrayService.findDigitAdd(a);
+		   for(int i=0;i<ar.length;i++) {
+			   System.out.print(ar[i]);
+			   
+		   }
+		
+		;
+
+		
+		
+
+	}
+
+}

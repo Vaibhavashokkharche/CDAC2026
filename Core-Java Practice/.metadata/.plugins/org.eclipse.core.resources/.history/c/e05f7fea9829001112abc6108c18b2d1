@@ -1,0 +1,14 @@
+package com.day2;
+
+public class TestAddition {
+	public static void main(String []args) {
+		
+		Addition ad= new Addition();
+		System.out.println("Integer:"+ad.add(5, 5));  //int int
+		System.out.println("Double:"+ad.add(25.25, 25.25)); //double
+	    System.out.println("3 Integer:"+ad.add(5, 5, 5)); //3 Integer args
+		System.out.println("float:"+ad.add(1.02f, 1));  // float
+		
+	}
+
+}

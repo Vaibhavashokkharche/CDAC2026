@@ -1,0 +1,120 @@
+package com.demo.Test;
+
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.zip.DataFormatException;
+
+import com.demo.Exception.IdException;
+import com.demo.Exception.PriceException;
+import com.demo.model.Vehicle;
+import com.demo.service.VehicleService;
+import com.demo.service.VehicleServiceImpl;
+
+public class TestVehicle {
+	public static void main(String[] args) {
+		VehicleService vservice = new VehicleServiceImpl();
+		int choice = 0;
+		do {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("1.add new vehicle\n2.delete vehicle\n3.modify vehicle price\n4.displayall");
+			System.out.println(
+					"5.display by id\n6.display by price\n7.sort by price\n8.sort by name\n9.sort by id");
+			System.out.println("10.sort by date\n11.exit\n choice :");
+			try {
+			choice = sc.nextInt();
+			}
+			catch (InputMismatchException e) {
+				System.out.println("Input Mismatch");
+				sc.hasNextLine();
+			}
+			switch (choice) {
+			case 1 -> {
+				boolean status;
+				try {
+					status = vservice.addNewVehicle();
+					System.out.println((status)?"Vehicle added":"Duplicate id(Vehicle not added)");
+				} catch (IdException | ArithmeticException | PriceException | DataFormatException e) {
+					
+					//e.printStackTrace();
+					System.out.println(e.getMessage());			
+				}
+				catch(InputMismatchException e) {
+					System.out.println("Data"+e.getMessage());
+					sc.nextLine();
+				}
+				
+			}
+			case 2 -> {
+				System.out.println("enter the id");
+				int id=sc.nextInt();
+				boolean status =vservice.deleteById(id);
+				System.out.println(status ? "Deleted successfully":"Not Found");					
+			}
+			case 3 -> {
+				System.out.println("enter id");
+				int id=sc.nextInt();
+				System.out.println("enter a new price");
+				double newPrice=sc.nextDouble();
+				boolean status=vservice.UpdateById(id, newPrice);
+				System.out.println(status?"Updated Sucessfully":"Not found");
+				
+			}
+			case 4 -> {
+				Set<Vehicle> vst=vservice.getAll();
+		          vst.forEach(System.out::println);				
+			}
+			case 5 -> {
+				System.err.println("enter id");
+				int id=sc.nextInt();
+				Vehicle v =vservice.getById(id);
+				System.out.println((v!=null)?v:"Not found");
+			
+			}
+			case 6 -> {
+				System.out.println("enter the price to serach");
+				double pr=sc.nextDouble();
+				List<Vehicle> vlist= vservice.getbyPrice(pr);
+			if(vlist.size()>0) {
+				vlist.forEach(System.out::println);
+			}else {
+				System.out.println("Not found");
+			}
+			
+			}
+			case 7 -> {
+				List<Vehicle> vlist=vservice.sortByPrice();
+				vlist.forEach(System.out::println);		
+				
+			}
+			case 8 -> {
+				List<Vehicle> vlist=vservice.sortByName();
+				vlist.forEach(System.out::println);
+			}
+			case 9 -> {
+				List<Vehicle> vlist=vservice.sortById();
+				vlist.forEach(System.out::println);
+				
+			}
+			case 10 -> {
+				List<Vehicle> vlist=vservice.sortByDate();
+				vlist.forEach(System.out::println);
+				
+			}
+		
+			case 11 -> {
+				sc.close();
+				System.out.println("Thank You For Visiting....!!!");
+
+			}
+			default -> {
+
+				System.out.println("You entered a wrong choice");
+			}
+
+			}
+		} while (choice != 12);
+
+	}
+}

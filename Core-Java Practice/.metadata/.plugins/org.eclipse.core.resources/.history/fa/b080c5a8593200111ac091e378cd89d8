@@ -1,0 +1,80 @@
+package com.demo.test;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.dao.EmployeeDao;
+import com.demo.model.Employee;
+import com.demo.service.EmployeeServiceImpl;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		EmployeeServiceImpl eservice = new EmployeeServiceImpl();
+
+		int choice = 0;
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out.println("1. add new employee\n2. delete by id\n3. update salary\n4. find by id");
+			System.out.print("5. display all\n6. display by name\n7. calculate net sal\n8. calculate bonus\n");
+			System.out.print("9. sort by id\n10. sort by name\n11. sort by sal\n12 exit\n choice:");
+			choice = sc.nextInt();
+
+			switch (choice) {
+			case 1 -> {
+				System.out.println(" 1:SalaryEmp\n 2:ContractEmp\n 3:VendorEmp\n choice");
+				int ch = sc.nextInt();
+				boolean status = eservice.addNewEmployee(ch);
+				System.out.println((status ? "Emp added Successfully" : "Employee Not added"));
+			}
+			case 2 -> {
+				//System.out.println("Enter the id ");
+			//	int id=sc.nextInt();
+			
+				
+				
+			}
+			case 3 -> {
+			}
+			case 4 -> {
+				System.out.println("Enter the id ");
+				int id=sc.nextInt();
+		      Employee e= eservice.getById(id);
+		      if(e!=null) {
+		     System.out.println(e);
+		      }
+		      else {System.out.println("Employee noyt founds");}
+				
+			}
+			case 5 -> {
+				List<Employee> lst=eservice.getAll();
+				lst.forEach(System.out::println);
+			}
+			case 6 -> {
+			}
+			case 7 -> {
+			}
+			case 8 -> {
+			}
+			case 9 -> {
+			}
+			case 10 -> {
+			}
+			case 11 -> {
+			}
+			case 12 -> {
+				sc.close();
+				System.out.println("Thank You for Visiting... ");
+			}
+
+			default -> {
+				System.out.println("Invalid Choice");
+			}
+
+			}
+
+		} while (choice != 12);
+
+	}
+
+};

@@ -1,0 +1,180 @@
+package com.demo.dao;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.model.ContractEmp;
+import com.demo.model.Employee;
+import com.demo.model.SalaryEmp;
+import com.demo.model.Vendor;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	static List<Employee> elist;
+	static {
+		elist = new ArrayList<>();
+		elist.add(new SalaryEmp(101, "Mina", "5555", "QA", "SDE1", 45000, 1000));
+		elist.add(new ContractEmp(201, "Ramesh", "66666", "Store", "StoreIncharge", 5, 250));
+		elist.add(new Vendor(301, "Riya", "77777", "UI", "ReactNative", 5, 250));
+
+	}
+
+	public boolean save(Employee e) {
+		if (e != null) {
+			elist.add(e);
+			return true;
+		}
+		return false;
+	}
+
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return elist;
+	}
+
+	@Override
+	public Employee finById(int id) {
+		int pos = elist.indexOf(new SalaryEmp(id));
+		if (pos != -1) {
+			Employee e = elist.get(pos);
+			return e;
+		}
+
+		return null;
+	}
+
+	public boolean removeById(int id) {
+		Scanner sc = new Scanner(System.in);
+		int pos = elist.lastIndexOf(new SalaryEmp(id));
+		if (pos != -1) {
+			System.out.println("If you want to delete y/n");
+			String d = sc.next();
+			if (d.equals("y")) {
+				elist.remove(pos);
+			} else {
+				return false;
+			}
+
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean updateSalary(int id, double newsal) {
+		int pos = elist.indexOf(new SalaryEmp(id));
+		Employee e = elist.get(pos);
+		if (e instanceof SalaryEmp) {
+			((SalaryEmp) e).setSalary(newsal);
+			return true;
+		} else if (e instanceof ContractEmp) {
+			((ContractEmp) e).setCharges(newsal);
+			return true;
+		} else {
+			((Vendor) e).setChargesperperosn(newsal);
+		}
+		return false;
+	}
+
+	@Override
+	public List<Employee> findByName(String nm) {
+		List<Employee> lst = new ArrayList<>();
+		for (Employee e : elist) {
+			if (e.getName().equals(nm)) {
+				lst.add(e);
+			}
+		}
+		if (lst.size() > 0) {
+			return lst;
+		}
+
+		return null;
+	}
+
+	@Override
+	public double calculateSalaryById(int id) {
+		int pos = elist.indexOf(new SalaryEmp(id));
+		Employee e = elist.get(pos);
+		if (e != null) {
+			double newSal = e.calculateSalary();
+
+			return newSal;
+		}
+
+		return -1;
+	}
+
+	@Override
+	public List<Employee> sortById() {
+		List<Employee> lst = new ArrayList<>();
+		lst = elist;
+		Collections.sort(lst);
+
+		return lst;
+	}
+
+	@Override
+	public List<Employee> sortByName() {
+		Comparator<Employee> cv = (obj1, obj2) -> {
+			System.out.println(obj1.getName()+"  "+obj2.getName());
+			
+			return obj1.getName().compareTo(obj2.getName());
+		};
+		List<Employee> lst = new ArrayList<>();
+		for (Employee e : elist) {
+			lst.add(e);
+		}
+		lst.sort(cv);
+
+		return lst;
+	}
+
+	@Override
+	public List<Employee> sortBySalary() {
+		Comparator<Employee> cp = (o1, o2) -> {
+			double s1 = 0.0;
+			double s2 = 0.0;
+			//
+			if (o1 instanceof SalaryEmp) {
+				s1 = ((SalaryEmp) o1).getSalary();
+			} else if (o1 instanceof ContractEmp) {
+				s1 = ((ContractEmp) o1).getCharges();
+			} else if (o1 instanceof Vendor) {
+
+				s1 = ((Vendor) o2).getChargesperperosn();
+			}
+
+			//
+			if (o1 instanceof SalaryEmp) {
+				s2 = ((SalaryEmp) o1).getSalary();
+			} else if (o2 instanceof ContractEmp) {
+				s2 = ((ContractEmp) o1).getCharges();
+			} else if (o2 instanceof Vendor) {
+
+				s2 = ((Vendor) o2).getChargesperperosn();
+			}
+			//
+			if (s1 < s2) {
+				return -1;
+			}
+
+			else if (s1 == s2) {
+				return 0;
+			} else {
+				return 1;
+			}
+		};
+		
+		List <Employee> lst=new ArrayList<>();
+		for(Employee e:elist) {
+			lst.add(e);
+			
+		}
+		lst.sort(cp);
+		
+		return lst;
+	}
+
+}

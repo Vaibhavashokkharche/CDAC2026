@@ -1,0 +1,34 @@
+package com.day2;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Student {
+	private int sid;
+	private String sname;
+	private float marks1;
+	private float marks2;
+	private  float marks3;
+	private Date jdt;
+	
+	Student (){
+		System.out.println("Default constructor");
+		
+	}
+	Student (int sid, String sname, float m1, float m2, float m3, Date jdt){
+		System.out.println("Parameter constructor is called");
+		this.sid=sid;
+		this.sname=sname;
+		this.marks1=m1;
+		this.marks2=m2;
+		this.marks3=m3;
+		this.jdt=jdt;		
+	}
+	public String toString() {
+	SimpleDateFormat s=new SimpleDateFormat("DD/MM/YYYY");
+	             String str=s.format(jdt);
+		return "id:" +sid +" sname:"+sname+" m1:"+marks1+" m2: "+marks2+" m3: "+marks3 +"Date: "+str;
+	}
+	
+
+}

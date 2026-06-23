@@ -1,0 +1,13 @@
+package com.day2;
+
+public class TestAddition {
+	public static void main(String []args) {
+		
+		Addition ad= new Addition();
+		ad.add(5, 5);
+		ad.add(25.25, 25.25);
+		ad.add(5, 5, 5);
+		ad.add(1.02f, 1);
+	}
+
+}

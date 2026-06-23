@@ -1,0 +1,13 @@
+package com.demo.dao;
+
+import com.demo.model.Friend;
+
+public interface FriendDao {
+
+	Friend[] findAll();
+
+	boolean findById(int id);
+
+	
+
+}

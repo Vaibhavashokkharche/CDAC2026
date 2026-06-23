@@ -1,0 +1,116 @@
+package com.demo.dao;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.demo.model.Vehicle;
+
+public class VehicleDaoImpl implements VehicleDao {
+	static Map<Integer, Vehicle> vmap;
+
+	static {
+		vmap = new HashMap<>();
+		vmap.put(11, new Vehicle(11, "MarutiSuzuki", "Breeza", 1100000, LocalDate.of(2017, 11, 26)));
+		vmap.put(12, new Vehicle(12, "Hyundai", "Venue", 100000, LocalDate.of(2020, 11, 26)));
+		vmap.put(13, new Vehicle(13, "Tata", "Hyryder", 1500000, LocalDate.of(2022, 11, 26)));
+		vmap.put(14, new Vehicle(14, "Honda", "HondaCity", 1700000, LocalDate.of(2015, 11, 26)));
+		vmap.put(15, new Vehicle(15, "Volkwagen", "Pollo", 900000, LocalDate.of(2014, 11, 26)));
+		vmap.put(16, new Vehicle(16, "LandRover", "Defender", 2500000, LocalDate.of(2025, 11, 26)));
+	}
+
+	@Override
+	public List<Vehicle> findAll() {
+		List<Vehicle> vlist = new ArrayList<>();
+		for (Integer k : vmap.keySet()) {
+			vlist.add(vmap.get(k));
+
+		}
+
+		return vlist;
+	}
+
+	@Override
+	public boolean save(Vehicle v) {
+		vmap.put(v.getVid(), v);
+		return true;
+	}
+
+	@Override
+	public boolean removeById(int id) {
+		Scanner sc = new Scanner(System.in);
+		for (Integer k : vmap.keySet()) {
+			Vehicle v = vmap.get(k);
+			if (v.getVid() == id) {
+				System.out.println("Do you want delete it y/n");
+				String cmsg = sc.next();
+				if (cmsg.equals("y")) {
+					vmap.remove(k);
+					return true;
+
+				}
+
+			}
+
+		}
+
+		return false;
+	}
+
+	@Override
+	public boolean modifyById(int id, double nprice) {
+		for (Integer k : vmap.keySet()) {
+			Vehicle v = vmap.get(k);
+
+			if (v.getVid() == id) {
+				v.setPrice(nprice);
+				return true;
+			}
+
+		}
+
+		return false;
+	}
+
+	@Override
+	public Vehicle findById(int id) {
+		for (Integer k : vmap.keySet()) {
+			Vehicle v = vmap.get(k);
+			if (v.getVid() == id) {
+				return v;
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public List<Vehicle> getByPrice(double price) {
+		List<Vehicle> vlist = new ArrayList<>();
+		for (Integer k : vmap.keySet()) {
+			Vehicle v = vmap.get(k);
+			if (v.getPrice() == price) {
+				vlist.add(v);
+			} 
+		}
+		return vlist;
+	}
+
+	@Override
+	public List<Vehicle> findByName(String nm) {
+		List<Vehicle> vlist=new ArrayList<>();
+		for(Integer k:vmap.keySet()) {
+			Vehicle v= vmap.get(k);
+			if(v.getVname().equals(nm)) {
+			vlist.add(v);
+			}
+			
+			
+		}
+		return vlist;
+	}
+
+}

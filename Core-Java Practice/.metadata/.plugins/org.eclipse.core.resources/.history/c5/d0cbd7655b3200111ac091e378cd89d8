@@ -1,0 +1,61 @@
+package com.demo.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.model.ContractEmp;
+import com.demo.model.Employee;
+import com.demo.model.SalaryEmp;
+import com.demo.model.Vendor;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	static List<Employee> elist;
+	static {
+		elist = new ArrayList<>();
+		elist.add(new SalaryEmp(101, "Mina", "5555", "QA", "SDE1", 45000, 1000));
+		elist.add(new ContractEmp(201, "Ramesh", "66666", "Store", "StoreIncharge", 5, 250));
+		elist.add(new Vendor(301, "Riya", "77777", "UI", "ReactNative", 5, 250));
+
+	}
+
+	public boolean save(Employee e) {
+		if (e != null) {
+			elist.add(e);
+			return true;
+		}
+		return false;
+	}
+
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return elist;
+	}
+
+	@Override
+	public Employee finById(int id) {
+		int pos = elist.indexOf(new SalaryEmp(id));
+		if (pos != -1) {
+			Employee e = elist.get(pos);
+			return e;
+		}
+
+		return null;
+	}
+
+	public boolean removeById(int id) {
+		Scanner sc = new Scanner(System.in);
+		int pos = elist.lastIndexOf(new SalaryEmp(id));
+		if (pos != -1) {
+			System.out.println("If you want to delete y/n");
+			String d = sc.next();
+			if (d.equals("y")) {
+				elist.remove(pos);
+			}
+
+			return true;
+		}
+		return false;
+	}
+
+}

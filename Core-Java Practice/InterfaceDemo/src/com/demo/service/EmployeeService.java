@@ -1,0 +1,106 @@
+package com.demo.service;
+
+import java.util.Scanner;
+
+import com.demo.model.ContractEmp;
+import com.demo.model.Employee;
+import com.demo.model.SalaryEmp;
+import com.demo.model.Vendor;
+
+public class EmployeeService {
+	static Employee emparr[];
+	static int count;
+	static {
+		emparr =new Employee[100];
+		emparr[0]=new SalaryEmp(101,"Vaibhav","7218964006", "QA", "Test Engineer", 0.5,2550.50);
+		emparr[1]=new ContractEmp(201,"Shubham", "555658552","Dev" , "SDE-1",5,500.25);
+		emparr[2]=new Vendor(301,"Neha","55556585", "Hr", "Mgr", 5,500);
+		count=3;
+	}
+
+
+	public static boolean addNewEmployee(int ch) {
+		Scanner sc = new Scanner(System.in);
+		if (count < emparr.length) {
+			System.out.println("Enter id");
+			int id = sc.nextInt();
+			System.out.println("Enter name");
+			String nm = sc.next();
+			System.out.println("Enter mobile number");
+			String mob = sc.next();
+			System.out.println("Enter dept");
+			String dept = sc.next();
+			System.out.println("Enter desig");
+			String desig = sc.next();
+			if (ch==1) {
+				System.out.println("In salary emp section");
+				System.out.println("Enter salary");
+				double salary = sc.nextDouble();
+				System.out.println("Enter bonus");
+				double bonus = sc.nextDouble();
+				emparr[count] = new SalaryEmp(id, nm, mob, dept, desig, salary, bonus);
+			} else if (ch==2) {
+				System.out.println("in contractemp section");
+				System.out.println("Enter hrs");
+				float hrs = sc.nextFloat();
+				System.out.println("Enter charges");
+				double charges = sc.nextDouble();
+				emparr[count] = new ContractEmp(id, nm, mob, dept, desig, hrs, charges);
+				
+			} else if (ch==3 ) {
+				System.out.println("In vendor emp section");
+				System.out.println("Enter the number of emp");
+				int noofemp = sc.nextInt();
+				System.out.println("Enter the chargesperperson");
+				double chargesperperson = sc.nextDouble();
+				emparr[count] = new Vendor(id, nm, mob, dept, desig, noofemp, chargesperperson);
+				
+			}
+			count++;
+         return true;
+		}
+
+		return false;
+	}
+
+//display data 
+	public static Employee[] displayAll() {
+	
+	 return emparr;
+	}
+
+	private static int  searchByid(int id) {
+		for (int i = 0; i < count; i++) {
+			if (emparr[i].getId() == id) {
+				return i;
+			}
+
+		}
+		return -1;
+	}
+
+	public static Employee findById(int id) {
+		int pos=searchByid(id);
+		if(pos!=-1) {
+			
+			return emparr[pos];
+		}
+		return null;
+	}
+
+	public static Employee[] displayByName(String nm) {
+		int cnt=0;
+		Employee arr[]=new Employee[count] ;
+		for(int i=0;i<count;i++) {
+			if(emparr[i].getName().equals(nm)) {
+			arr[cnt]=emparr[i];	
+			cnt++;
+			}else {
+				return null;
+			}
+			
+		}
+		return arr;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.day2;
+
+public class String1 {
+//String is immutable class in java means once object created the content is fixed not be modify	
+	public static void main(String[] args) {
+		String s1 = "Vaibhav";
+		String s2 = "Rushikesh";
+	    String s3 = "Vaibhav";
+	   s3=s2;
+	    System.out.println(s1==s2);
+	}
+	
+     
+
+
+};

@@ -1,0 +1,14 @@
+package com.day3;
+
+public class Test2dArray {
+	public static void main(String[] args) {
+		int arr[][]=new int[3][3];
+		Array2DService.accpectData(arr);
+		
+		
+	}
+	
+	
+	
+
+}

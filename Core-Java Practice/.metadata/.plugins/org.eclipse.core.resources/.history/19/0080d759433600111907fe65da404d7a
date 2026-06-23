@@ -1,0 +1,32 @@
+package com.demo.dao;
+
+import java.util.List;
+import java.util.Set;
+
+import com.demo.model.Vehicle;
+
+public interface VehicleDao {
+
+	Set<Vehicle> findAll();
+
+	boolean save(Vehicle v);
+
+	boolean removeById(int id);
+
+	boolean modifyPrice(int id, double newPrice);
+
+	Vehicle findById(int id);
+
+	List<Vehicle> findByPrice(double pr);
+
+	List<Vehicle> sortById();
+
+	List<Vehicle> sortByName();
+
+	List<Vehicle> SortByPrice();
+
+	List<Vehicle> SortByDate();
+
+
+
+}

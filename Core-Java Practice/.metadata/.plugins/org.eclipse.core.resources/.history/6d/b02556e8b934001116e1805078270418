@@ -1,0 +1,115 @@
+package com.demo.test;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.demo.model.Vehicle;
+import com.demo.service.VehicleService;
+import com.demo.service.VehicleServiceImpl;
+
+public class TestVehicle {
+
+
+	public static void main(String[] args) {
+
+		VehicleService vservice = new VehicleServiceImpl();
+     int choice=0;
+		
+
+	do {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("1: Add New Vehicle\n2:Delete By Id\n3:Modify Price By Id\n4:Display All\n5:Display By Id\n6:Display By price\n7:Display By Name");
+		System.out.println("8:Sort By id\n9:Sort By Price\n10:SortById\n11:Exit\n Enter your choice");
+		choice =sc.nextInt();
+		switch(choice) {
+		case 1->{
+		boolean status=vservice.addNewVehicle();
+	    System.out.println(status?"Vehicle Added Suceessfully":"Duplicate Id");
+			
+			
+		}
+		case 2->{
+			System.out.println("enter the id");
+			int id=sc.nextInt();
+			boolean status=vservice.deleteById(id);
+			System.out.println(status?"Deleted successfully":"Not Found");
+			
+			
+		}
+		case 3->{
+			System.out.println("enter id");
+			int id=sc.nextInt();
+		   System.out.println("enter new price");
+		   double nprice=sc.nextDouble();
+		   boolean status=vservice.updateById(id,nprice);
+		System.out.println(status?"updated successfully":"Not Found");
+		   
+			
+		}
+		case 4->{
+			List<Vehicle> vlist=vservice.getAll();
+			vlist.forEach(System.out::println);
+		}
+		case 5->{
+			System.out.println("enter id");
+			int id=sc.nextInt();
+			Vehicle v=vservice.getById(id);
+			if(v!=null) {
+				System.out.println(v);
+			}else {
+				System.out.println("Not Found");
+			}
+		}
+		case 6->{
+			System.out.println("enter a price");
+			double price=sc.nextDouble();
+		List<Vehicle> vlist= vservice.getByPrice(price);
+		vlist.forEach(System.out::println);
+			
+		}
+		case 7->{
+			System.out.println("enter the name");
+			String nm=sc.next();
+			List<Vehicle> vlist=vservice.getByName(nm);
+			vlist.forEach(System.out::println);
+			
+			
+		}
+		case 8->{
+		Map<Integer, Vehicle> vmap =vservice.sortById();
+		
+			
+			
+		}
+		case 9->{}
+		case 10->{}
+		case 11->{
+			System.out.println("Thanks for Visting...!!");
+		}
+		default->{
+			System.out.println("Opps....!!Wrong choice");
+		}
+		}
+		
+	}while(choice!=11);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}

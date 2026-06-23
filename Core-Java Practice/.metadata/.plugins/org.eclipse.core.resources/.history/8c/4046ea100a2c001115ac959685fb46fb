@@ -1,0 +1,172 @@
+package com.day3;
+
+import java.util.Scanner;
+
+public class Array2DService {
+	//accepct the data from user
+	public static void accpectData(int arr[][]) {
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.println("Enter the " + i + "row and" + j + "column value");
+				arr[i][j] = sc.nextInt();
+
+			}
+			System.out.println();
+		}
+		System.out.println("Data Added Sucessfully");
+
+	}
+
+	// display the Data from 2DArray
+	public static void displayData(int arr[][]) {
+		System.out.println("2D Array");
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+
+			System.out.println();
+		}
+
+	}
+//find the maximum number from entire array
+	public static int findMax(int arr[][]) {
+		int max = arr[0][0];
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+
+				if (arr[i][j] > max) {
+					max = arr[i][j];
+
+				}
+
+			}
+
+		}
+		return max;
+	}
+	
+	//Find the minimum number from array
+	public static int findMin(int arr [][]) {
+		int min=arr[0][0];
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				if(arr[i][j]<min) {
+					min=arr[i][j];
+				}
+				
+			}
+		}
+		return min;
+	}
+	//Find the sum of the Entire array
+	
+	public static int findSum(int arr[][]) {
+		int sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				sum += arr[i][j];
+			}
+
+		}
+
+		return sum;
+
+	}
+	
+	//find the row wise sum
+	public static int[]findRowiseSum(int arr[][]) {
+		int [] rowisesum=new int [arr.length];
+		for (int i=0;i<arr.length;i++) {
+	    for(int j=0;j<arr[i].length;j++) {
+		   rowisesum[i]+=arr[i][j];
+		   
+	   }
+			
+		}
+		
+		return rowisesum;
+		
+	}
+	//find the colomnwise sum;
+	public static int [] findColumnwiseSum(int arr[][]) {
+		int coloumnwisesum []=new int[arr.length];
+		for(int i=0;i<arr[0].length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				coloumnwisesum[i]+=arr[j][i]	;
+				
+			}
+		}
+		return coloumnwisesum;
+		
+	}
+	//find the RowiseMax numner
+	public static int [] findRowwiseMax(int arr[][]) {
+		int max[] = new int[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				max[i] = arr[i][0];
+				if (arr[i][j] > max[i]) {
+
+					max[i] = arr[i][j];
+				}
+
+			}
+
+		}
+    return max;
+	}
+	
+	
+	public static int[] findColoumwiseMax(int arr[][]) {
+
+		int max[] = new int[arr.length];
+		for (int i = 0; i < arr[i].length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				max[i] = arr[i][j];
+				if (arr[i][j] > max[i]) {
+					max[i] = arr[i][j];
+				}
+
+			}
+
+		}
+
+		return max;
+
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		//int a[][]=new int[3][3];
+		
+		int a[][]= {
+				{10,20,30},
+				{11,12,13},
+				{21,22,23}	
+		};
+		for(int i=0 ; i<a.length;i++) {
+		for(int j=0;j<a[0].length;j++)	{
+			
+			System.out.print(a[i][j]+" ");
+			
+			
+		}
+			System.out.println();
+			
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

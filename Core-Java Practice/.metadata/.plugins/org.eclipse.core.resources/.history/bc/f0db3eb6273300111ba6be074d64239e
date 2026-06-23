@@ -1,0 +1,56 @@
+package com.demo.Test;
+
+import java.util.Scanner;
+
+import com.demo.service.VehicleService;
+import com.demo.service.VehicleServiceImpl;
+
+public class TestVehicle {
+	public static void main(String[] args) {
+		VehicleService vservice = new VehicleServiceImpl();
+		int choice = 0;
+		do {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("1. add new vehicle\n,3.delete vehicle\n4. modify vehicle price\n5. displayall");
+			System.out.println(
+					"6.display by id\n7.display by price\n8. sort by price\n9. sort by name\n10. sort by id");
+			System.out.println("11. sort by date\n 12. exit\n choice :");
+			choice = sc.nextInt();
+			switch (choice) {
+			case 1 -> {
+			}
+			case 2 -> {
+			}
+			case 3 -> {
+			}
+			case 4 -> {
+			}
+			case 5 -> {
+			}
+			case 6 -> {
+			}
+			case 7 -> {
+			}
+			case 8 -> {
+			}
+			case 9 -> {
+			}
+			case 10 -> {
+			}
+			case 11 -> {
+			}
+			case 12 -> {
+				sc.close();
+				System.out.println("Thank You For Visiting....!!!");
+
+			}
+			default -> {
+
+				System.out.println("You entered a wrong choice");
+			}
+
+			}
+		} while (choice != 12);
+
+	}
+}

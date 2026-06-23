@@ -1,0 +1,14 @@
+package com.day3;
+
+public class Test2dArray {
+	public static void main(String[] args) {
+		// int arr[][]=new int[3][3];
+		int arr[][] = { { 11, 12, 13 }, { 21, 22, 23 }, { 31, 32, 33 } };
+		// Array2DService.accpectData(arr);
+		Array2DService.displayData(arr);
+		int max=Array2DService.findMax(arr);
+		System.out.println(max);
+
+	}
+
+}

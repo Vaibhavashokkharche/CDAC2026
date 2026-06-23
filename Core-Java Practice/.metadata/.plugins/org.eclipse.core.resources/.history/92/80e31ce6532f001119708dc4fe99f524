@@ -1,0 +1,20 @@
+//Use different methods of java defined wrapper classes.
+
+package com.assignment;
+public class Wrapper {
+	
+	public static void main(String[] args) {
+	int a=10;
+	String s1="Vaibhav";
+	System.out.println(Integer.MIN_VALUE);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

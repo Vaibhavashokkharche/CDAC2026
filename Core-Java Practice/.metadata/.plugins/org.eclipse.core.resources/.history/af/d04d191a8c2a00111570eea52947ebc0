@@ -1,0 +1,45 @@
+package com.day3;
+
+import java.util.Scanner;
+
+public class ArrayService {
+
+	// accept data in the array
+	public static void accpectdata(int arr[]) {
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("Enter the" + i + "element");
+			arr[i] = sc.nextInt();
+		}
+	}
+
+	// display the data of array
+	public static void displayData(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	// search whether num exists int he array and return position
+	public static int searchData(int arr[], int num) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == num) {
+				return i;
+			}
+		}
+		return -1;
+	}
+		  
+
+
+
+
+
+
+
+
+
+
+
+};

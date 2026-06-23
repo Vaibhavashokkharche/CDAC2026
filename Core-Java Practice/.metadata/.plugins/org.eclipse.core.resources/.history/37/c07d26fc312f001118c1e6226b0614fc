@@ -1,0 +1,51 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.model.ContractEmp;
+import com.demo.model.Employee;
+import com.demo.model.SalaryEmp;
+import com.demo.model.Vendor;
+
+public class TestPolymorphism {
+	public static void main(String[] args) {
+		System.out.println("Welcome to Employee Management System");
+		
+		Scanner sc = new Scanner(System.in);
+		Employee e; // Referance of Employeee class
+		int choice=0 ;
+		do {
+		
+			System.out.println(" 1: Salary Employee\n 2: Contract Employee\n 3: Vendor Employee\n 4:Exit\n Choice:");
+			choice=sc.nextInt();
+			switch (choice) {
+			case 1 -> {
+				System.out.println("Welocme to Salary Emp Section!");
+				e = new SalaryEmp(101, "Vaibhav", "7218964006", "QA", "TestEngineer", 5, 25000);
+				
+			}
+			case 2 -> {
+				System.out.println("Welocme to Contract Emp Section!");
+				e = new ContractEmp(201, "Riya", "1234567890", "Dev", "SDE-1", 5, 500);
+			}
+			case 3 -> {
+				System.out.println("Welocme to Vendor Emp Section!");
+				e= new Vendor(202,"Deepa", "858585", "Hr", "Account Manager", 2,1000);
+			}
+			case 4 -> {
+				System.out.println("Thanks you for Visiting !");
+			}
+			default -> {
+
+				System.out.println("Invalid Choice");
+
+			}
+             
+			}
+			System.out.println(e.calculateSalary());
+
+		} while (choice!=0);
+
+	}
+
+}

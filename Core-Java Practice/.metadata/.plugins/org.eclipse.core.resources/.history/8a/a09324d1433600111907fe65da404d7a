@@ -1,0 +1,168 @@
+package com.demo.dao;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+
+import com.demo.model.Vehicle;
+
+public class VehicleDaoImpl implements VehicleDao {
+	static Set<Vehicle> vset;
+	static {
+		vset = new HashSet<>();
+		vset.add(new Vehicle(21, "Yamaha FZS", 170000, "V4", LocalDate.of(2017, 11, 9)));
+		vset.add(new Vehicle(69, "Suzuki", 125000, "Gixer", LocalDate.of(2024, 11, 9)));
+		vset.add(new Vehicle(53, "Royal Enfiled", 250000, "Bullet", LocalDate.of(2021, 11, 9)));
+		vset.add(new Vehicle(55, "Honda", 210000, "CB350", LocalDate.of(2016, 11, 9)));
+
+	}
+
+	@Override
+	public Set<Vehicle> findAll() {
+
+		return vset;
+	}
+
+	@Override
+	public boolean save(Vehicle v) {
+		return vset.add(v);
+	}
+
+	@Override
+	public boolean removeById(int id) {
+		Scanner sc = new Scanner(System.in);
+		for (Vehicle v : vset) {
+			if (v.getVid() == id) {
+				System.out.println("Do you want to delete y/n");
+				String confirm = sc.next();
+				if (confirm.equals("y")) {
+
+					vset.remove(v);
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	@Override
+	public boolean modifyPrice(int id, double newPrice) {
+		for (Vehicle v : vset) {
+			if (v.getVid() == id) {
+
+				v.setPrice(newPrice);
+				return true;
+			}
+
+		}
+		return false;
+	}
+
+	@Override
+	public Vehicle findById(int id) {
+		for (Vehicle v : vset) {
+			if (v.getVid() == id) {
+				return v;
+			}
+
+		}
+		return null;
+	}
+
+	@Override
+	public List<Vehicle> findByPrice(double pr) {
+		List<Vehicle> lst = new ArrayList<>();
+		for (Vehicle v : vset) {
+			if (v.getPrice() == pr) {
+				lst.add(v);
+			}
+
+		}
+		if (lst.size() > 0) {
+			return lst;
+		}
+
+		return null;
+	}
+
+	@Override
+	public List<Vehicle> sortById() {
+		List<Vehicle> lst = new ArrayList<>();
+		for (Vehicle v : vset) {
+			lst.add(v);
+		}
+		Collections.sort(lst);
+
+		return lst;
+	}
+
+	@Override
+	public List<Vehicle> sortByName() {
+		Comparator<Vehicle> cn = (o1, o2) -> {
+			System.out.println("comparator for name called");
+			return o1.getVname().compareTo(o2.getVname());
+		};
+		List<Vehicle> vlist = new ArrayList<>();
+		for (Vehicle v : vset) {
+
+			vlist.add(v);
+		}
+		vlist.sort(cn);
+
+		return vlist;
+	}
+
+	@Override
+	public List<Vehicle> SortByPrice() {
+		Comparator<Vehicle> cp = (o1, o2) -> {
+			System.out.println("Comparator for price is called");
+
+			return (int) (o1.getPrice() - o2.getPrice());
+
+		};
+
+		List<Vehicle> vlist = new ArrayList<>();
+		for (Vehicle v : vset) {
+			vlist.add(v);
+
+		}
+		vlist.sort(cp);
+
+		return vlist;
+	}
+
+	@Override
+	public List<Vehicle> SortByDate() {
+		Comparator<Vehicle> cd=(o1,o2)->{
+			System.out.println("date comparator called");
+			LocalDate dt1=o1.getMfgdate();
+			LocalDate dt2=o2.getMfgdate();	
+			if(dt1.isBefore(dt2)) {
+				return -1;
+			}
+			else if(dt1.isAfter(dt2)){
+			return 1;	
+			}
+			else if(dt1.isEqual(dt2)) {
+			return 0;	
+			}
+			return -2;
+			};
+	List<Vehicle> vlist=new ArrayList<>();
+	
+		for(Vehicle v:vset)	{
+			vlist.add(v);	
+		}
+		Collections.sort(vlist, cd);	
+		
+		return vlist;
+	}
+
+}
