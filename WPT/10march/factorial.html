@@ -1,0 +1,43 @@
+<html>
+<head>
+    <h1>Calculate the factorial of any number</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta.2/jquery.min.js"></script>
+<script>
+$(document).ready(
+()=>{
+    console.log("The page is successfully loaded");
+
+$("#btn").click(
+    ()=>{
+let num= $("#num").text();
+console.log(num);
+let n=num;
+let sum=1;
+for(var i=1; i<=num; i++){
+    sum=sum*i;
+
+}
+
+
+
+ $("#p1").text(sum);
+    }
+ 
+)
+}
+)
+</script>
+</head>
+<body>
+<div style="height: 300px; width:250px; border-radius: 5px; border-color: aqua; padding-left: 100px;">
+<label for="input">Enter the number</label>
+<input type="number" name="input" id="num"/>
+<button id="btn">Convert</button>
+<P id="p1"></P>
+
+
+
+</div>
+</body>
+
+</html>

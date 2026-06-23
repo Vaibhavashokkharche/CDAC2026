@@ -1,0 +1,51 @@
+<html>
+<h1>Currency Converter</h1>
+<body>
+   <label for="input">Enter your number</label>
+   <input type="number" name="currency" id="input"/> </br>
+   <label for="from">From
+    <select name="from" id="from">
+        <option value="rupee">Rupee</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+    </select>
+   </label>
+ <label for="to">To
+    <select name="to" id="to">
+        <option value="rupee">Rupee</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+    </select>
+   </label>  
+
+   <button type="button" id="btn" onclick=" Convert()">Convert</button>
+
+
+
+
+    </body>
+    <script>
+        rates={
+            "rupee":1,
+            "dollar":80,
+            "euro":85
+        }
+    function Convert(){
+        let amount=document.getElementById("input").value;
+        console.log(amount);
+
+        let fromCurrency=document.getElementById("from").value;
+             console.log(fromCurrency);
+        let tocurrency=document.getElementById("to").value;
+             console.log(tocurrency);
+
+
+
+
+
+    }
+
+
+    </script>
+
+</html>

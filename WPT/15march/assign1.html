@@ -1,0 +1,31 @@
+<html>
+<head>
+    
+    
+<script>
+    function ChangeText(){
+  document.getElementById('p1').innerHTML="Vaibhav Kharche";
+  
+    }
+    function Addtag(){
+        let c=document.createElement("p");
+        c.innerHTML=" Vaibhav Ashok Kharche";
+        document.body.appendChild(c);
+        documet.getElementById("d1").appendChild(c);
+        
+    
+    }
+</script>
+</head>
+<body>
+    <div id="d1">
+    <strong><p id="p1">Rushikesh Kharche</p></strong>
+    <button id="btn" onclick="ChangeText()">ChangeText</button>
+    <button id="btn2" onclick="Addtag()">AddTag</button>
+</div>
+
+</body>
+
+
+
+</html>

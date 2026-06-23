@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script>
+        let http= new XMLHttpRequest();
+        http.open("GET","https://fakestoreapi.com/products");
+        http.send();
+        console.log("sucessfully send");
+        http.onreadystatechange=
+          function(){
+         if(http.readyState==4 && http.status==200){
+            console.log("response get")    
+           let d = JSON.parse(this.responseText);
+           console.log(typeof(d));
+           console.log(d);
+        // //    let tableBody = document.getElementById("myTableBody");
+        // // let htmlRows = "";
+
+        // // // If 'd' is an array of objects
+        // d.forEach(item => {
+        //   `<tr>
+        //                     <td>${item.id}</td>
+        //                     <td>${item.title}</td>
+        //                     <td>${item.price}</td>
+        //                  </tr>`;
+        // });
+
+        // // tableBody.innerHTML = htmlRows;
+           
+
+        d.forEach(item => {
+           console.log(item.id);
+           console.log(item.title);
+           console.log(item.price);
+
+        });
+           }
+          
+            
+            }
+            
+          
+        
+        
+         
+
+    </script>
+</head>
+
+<body>
+    <!-- https://fakestoreapi.com/products -->
+    <p id="p1"> Vaibhav</p>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="myTableBody">
+                </tbody>
+        </table>
+</div>
+</body>
+
+</html>

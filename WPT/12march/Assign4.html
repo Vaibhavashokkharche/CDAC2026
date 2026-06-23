@@ -1,0 +1,111 @@
+<!-- https://jsonplaceholder.typicode.com/todos
+using above api create post mehod in ajax concept -- accept data from user for post  -->
+<html>
+
+<head>
+<style>
+    .container{
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        align-items: center;
+       width: 300px;
+       padding: 50px;
+  border-block:inherit;
+       border-radius: 10px;
+       border-color: aqua;
+       background-color: aquamarine;
+
+    }
+    .container label{
+        font-size:small;
+        font: bold;
+        display:block;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container input[type="text"],select{
+    
+    display: block;
+
+
+        width: 100%;
+        height: 20px;
+        
+
+    }
+    .container button{
+        margin-top: 10px;
+        margin-right: 100px;
+       align-content: center;
+    padding: 5px 7px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+        
+    }
+  
+</style>
+<script>
+function SendRecords(){
+    var req=new XMLHttpRequest();
+
+    //creating the object for storedthe data from html
+    const data={
+    userId:document.querySelector("#u1").value,
+    title:document.querySelector("#t1").value,
+    completed: document.querySelector("#s1").value,
+    }
+console.log(data);
+req.open("Post" ,"https://jsonplaceholder.typicode.com/todos");
+req.setRequestHeader('Content-type', 'application/json');
+req.send(JSON.stringify(data));
+
+   req.onreadystatechange= ()=>{
+    
+    if(req.readyState==4 && req.status==201){
+        console.log("request send sucessfully");
+        console.log(req.responseText);
+     
+    }
+    let d=req.responseText;
+    console.log(typeof(d));
+        let c=JSON.stringify(d);
+ 
+     document.querySelector("#p1").innerHTML=d;
+
+
+   }
+
+
+
+
+
+}
+
+
+</script>
+
+</head>
+
+
+<body>
+    <div class="container">
+    <label for="username">UserId</label>
+    <input type="text" id="u1" name="username"/> </br>
+    <label for="title">Title</label>
+    <input type="text" id="t1" name="title"> </br>
+    <label for="result">Completed</label>
+    <select name="result" id="s1">
+        <option value="true">True</option>
+        <option value="false">False</option>
+    </select>
+    <button type="submit" onclick="SendRecords()" id="btn">Submit</button>
+</div>
+<p id="p1"></p>
+</body>
+
+
+</html>

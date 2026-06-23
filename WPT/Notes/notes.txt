@@ -1,0 +1,94 @@
+
+
+
+	Network    Internet 
+
+		www
+
+
+	Client 	communication	Server 
+
+		HTTP  Methods 
+
+GET  POST 
+
+		Stateless 
+
+		https 
+
+		Request + Data  (business Logic  Format 
+		Response 
+
+
+		HTML --- Interpreted   Browser 
+
+Presentation Logic   tags 
+
+  .html    <! DOCTYPE  html/>  element meaning 
+
+tags  ---- attributes    start tag 
+		name=value 
+
+table   rows   cols 
+
+  WebSite ---- Collection of html 
+
+
+  interconnect    link   Hyperlink 
+
+	<a 
+
+
+	<header>   top 
+
+
+	<footer>
+
+
+Static HTML Pages      Data 
+
+	Filter    / search 
+
+
+        Input     Form Elements 
+
+   Dyanamic 
+
+Form  method 
+
+file:///C:/Users/Admin/Desktop/WPT2026/26022026/
+Login.html?user=asded
+
+
+GET 
+file:///C:/Users/Admin/Desktop/WPT2026/26022026/Login.html?user=asas&pass=asas
+
+
+POST  
+file:///C:/Users/Admin/Desktop/WPT2026/26022026/Login.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

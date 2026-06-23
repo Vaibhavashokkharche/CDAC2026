@@ -1,0 +1,68 @@
+<html>
+<head>
+</head>
+<body>
+    <input type="number" id="numBox" placeholder="Enter a number">
+<button onclick="searchArr()">Search</button>
+<button onclick="addLast()">Add to End</button>
+
+<br><br>
+
+<input type="number" id="idxBox" placeholder="Enter index">
+<button onclick="insertAt()">Insert at Index</button>
+<button onclick="removeAt()">Remove at Index</button>
+
+<hr>
+<p id="msg">Result: ...</p>
+<p id="display">Array: [ ]</p>
+
+    <script>
+    // This is our starting array
+    let myData = [10, 20, 30];
+
+    // Function to show the array on the screen
+    function update() {
+        document.getElementById("display").innerText = "Array: " + myData;
+    }
+
+    // 1. Search
+    function searchArr() {
+        let val = Number(document.getElementById("numBox").value);
+        if (myData.includes(val)) {
+            document.getElementById("msg").innerText = "Found!";
+        } else {
+            document.getElementById("msg").innerText = "Not Found";
+        }
+    }
+
+    // 2. Add to End
+    function addLast() {
+        let val = Number(document.getElementById("numBox").value);
+        myData.push(val); // push puts it at the very end
+        update();
+    }
+
+    // 3. Insert at Index
+    function insertAt() {
+        let val = Number(document.getElementById("numBox").value);
+        let idx = Number(document.getElementById("idxBox").value);
+      
+        myData.splice(idx, 0, val); 
+        update();
+    }
+
+    // 4. Remove at Index
+    function removeAt() {
+        let idx = Number(document.getElementById("idxBox").value);
+        myData.splice(idx, 1); // delete 1 item at this index
+        update();
+    }
+
+    // Show the array when the page starts
+    update();
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+<h1>Login form</h1>
+</head>
+<body>
+<label for="username">UserName:
+    <input type="text" id="username" >
+</label> 
+<label for="password">Password:
+    <input type="text" id="password" >
+</label>
+    <button type="button" onclick="validate()">Login</button>
+    <p id="msg"></p>
+
+
+    <script>
+        function validate(){
+         let user= document.getElementById("username").value;
+         let pass= document.getElementById("password").value;
+         let Msg= document.getElementById("msg");
+         console.log(user);
+         console.log(pass);
+         if(user=="iet" && pass=="123" || user=="cdac" && pass=="456" || user=="software" && pass=="789"){
+          //document.getElementById("msg").innerText="Welcome"
+          Msg.innerText="Welcome";
+          
+         } else {
+        
+           // Message=document.getElementById("msg").innerText="Please put the correct details"
+              Msg.innerText="Please put the correct details";
+              Msg.style.color="red";
+          
+          
+         }
+            document.getElementById("username").value=" ";
+          document.getElementById("password").value=" ";
+
+
+
+
+        }
+    </script>
+</body>
+
+
+
+
+
+</html>

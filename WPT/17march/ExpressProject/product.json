@@ -1,0 +1,7 @@
+[
+    {"prodid": 1, "ProductName": "Laird", "price": 2000},
+    {"prodid": 2, "ProductName": "Logitech Mouse", "price": 1500},
+    {"prodid": 3, "ProductName": "Mechanical Keyboard", "price": 4500},
+    {"prodid": 4, "ProductName": "Dell Monitor", "price": 12000},
+    {"prodid": 5, "ProductName": "Sony Headphones", "price": 8000}
+  ]

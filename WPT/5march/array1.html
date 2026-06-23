@@ -1,0 +1,88 @@
+<html>
+
+<head>Array Manipulation Program
+
+<style>
+
+</style>
+
+
+
+</head>
+<body>
+    <div style="padding: 40px;">
+    <input type="text" id="input-add" placeholder="Enter the value"/>
+    <button onclick="add()" id="btn">AddToEnd</button>
+    <button onclick="search()" id="btn">Search</button>
+    </div>
+
+<div style="padding: 40px;">
+<input type="text" id="input-addindex" placeholder="Enter the value"/>
+<button onclick="insertAtIndex()" id="btn">Insert At Index</button>
+</div>
+
+<div style="padding: 40px;">
+    <input type="text" id="input-removeindex" placeholder="Enter the value"/>
+    <button onclick="removeAtIndex()" id="btn">Remove At Index</button>
+</div>
+<p id ="msg"></p>
+<p id="result"> Result: </p>
+
+<!-- //jscode -->
+<script>
+let arraydata=[10,20,30,40,50];
+ 
+function update(){
+let upd=document.getElementById("result").innerText="Array is"+arraydata;
+
+}
+function search(){
+let s=Number(document.getElementById("input-add").value);
+console.log(s);
+
+if(arraydata.includes(s)){
+    document.getElementById("msg").innerHTML="Status>> Found";
+}else{
+
+    document.getElementById("msg").innerHTML="Status>> Not Found";
+}
+
+}
+
+function add(){
+let a=Number(document.getElementById("input-add").value);
+arraydata.push(a);
+update();
+
+
+}
+function insertAtIndex(){
+let idx=Number(document.getElementById("input-addindex").value); //2
+let i=Number(document.getElementById("input-add").value);
+  // splice(where, delete_how_many, new_value)
+arraydata.splice(idx,0,i);
+update();
+
+}
+function removeAtIndex(){
+    let idx=Number(document.getElementById("input-removeindex").value);
+    arraydata.splice(idx,1);
+    update();
+
+
+
+}
+
+
+update();
+</script>
+
+
+</body>
+
+
+
+
+
+
+</html>

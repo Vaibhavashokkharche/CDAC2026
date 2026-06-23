@@ -1,0 +1,46 @@
+<html>
+<head>
+    Calculater
+
+    <style >
+        .input{
+            display: block;
+            margin: auto;
+        }
+      div{
+       align-self: center;
+       justify-content: center; /* Horizontal center */
+        align-items: center;   
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+     
+    </style>
+    <script src="Assign1.js"></script>
+</head>
+ <body>
+    <div class="input">
+        <label for="fnumber">Enter the First Number:</label>
+        <input type="number" id="i1" name="fnumber"/> </br>
+        <select name="operator" id="o1" style="display: flex; width:25% ;height:25%;"> 
+        <option value="+">add</option>
+        <option value="-">sub</option>
+        <option value="*">multi</option>
+        <option value="/">div</option></select> <br>
+        <label for="snumber">Enter the Second Number:</label>
+        <input type="number" id="i2" name="snumber"/>
+        <button id="btn" onclick="Calculate()">Calculate</button>
+        <p id="p1">Result is</p>
+    </div>
+ </body>
+
+
+
+
+
+</html>

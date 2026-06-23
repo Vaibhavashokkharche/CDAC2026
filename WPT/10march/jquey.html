@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta.2/jquery.min.js"></script>  
+<script>
+$(document).ready(
+()=>{
+console.log("The page is fully loaded ");
+$("#btn").click(
+    ()=>{
+        $("#p1").text("Hello");
+        $("#p2").css("font-style","italic").text("Hello");
+        $("#p3").css("text-decoration","underline").text("Hello");
+
+    }
+)
+
+
+
+
+
+}
+
+
+)
+
+
+
+</script>
+
+
+</head>
+<body>
+    <button id="btn" style="height: 30px; width: 100px;">Welcome</button>
+    <p id="p1"></p>
+    <p id ="p2"></p>
+    <p id="p3"></p>
+  
+
+
+</body>
+</html>

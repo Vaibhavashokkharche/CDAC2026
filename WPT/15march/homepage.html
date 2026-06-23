@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, intial-scale=1.0">
+<title>Shri Sairam Travels</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+<span>Booking 7218964006 | 7798722355</span>
+<div class="top-links">
+    <a href="#">Agent Login</a> | <a href="#">My Booking</a>
+</div>
+    </div>
+
+<header>
+<div class="logo">
+    <span class="yellow">SHRI</span> <span class="white">SAIRAM</span> <span class="yellow">TRAVELS</span>
+</div>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Cancellation</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+</header>
+
+<section class="hero">
+    <div class="booking-container">
+<h3>Book Your Bus Ticket</h3>
+<form class="booking-form" action="routes.html" onsubmit="return validate()">
+    <div class="input-group">
+        <label>From City</label>
+        <Select style="width: 100px;" id="fr">
+       <option id="ip"  value="pune" selected>Pune</option>
+       <option id ="im" value="malkapur">Malkapur</option>
+       <option  id ="ij"  value="jalgoan">Jalgoan</option>
+       <option  id ="ib"  value="buldhana">Buldhana</option>
+        </Select>
+    </div>
+    <div class ="input-group">
+        <label>To City</label>
+        <Select style="width: 100px;" id="to">
+            <option id="ip" value="pune">Pune</option>
+            <option id ="im" value="malkapur" selected>Malkapur</option>
+            <option  id ="ij"  value="jalgoan">Jalgoan</option>
+            <option  id ="ib"  value="buldhana">Buldhana</option>
+             </Select>
+    </div>
+    <div class="input-group">
+<label>Date</label>
+<input  id="d" type="date" />                       
+    </div>
+  <button type="submit" onsubmit="validate()" class="search-btn">Search Buses</button>
+  <p id="warn"  style="color: red; text-align: right"   ></p>
+</form>
+    </div>
+</section>
+
+
+<section class="features">
+    <div class="feat-box">10% Flat Discount on E-Booking</div>
+    <div class="feat-box">24*7 Support</div>
+    <div class="feat-box">Safe and Secure Journey</div>
+    <div class="feat-box">Live Bus Tracking <div>
+
+</section>
+
+<footer>
+    <p>@Copyright; 2026 Shri Sairam Travels. All Rights Reserved.</p>
+</footer>
+<script>
+ function validate(){
+    let from=document.getElementById("fr").value;
+    let to=document.getElementById("to").value;
+    let date=document.getElementById("d").value;
+    
+    console.log(date);
+if(from!=to && Date<=date){
+    console.log("ready to next step");
+    return true;
+} 
+else{
+    document.getElementById("warn").innerText="From and to City must be different";
+    return false;
+}
+
+}
+
+
+
+</script>
+
+</body>
+</html>

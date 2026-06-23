@@ -1,0 +1,74 @@
+<html>
+<head>
+<h1>Array Manipulation </h1>
+</head>
+<body>
+<label for="i1">Enter the number</label>
+<input type="text" id="i1"/>
+<button type="button" id="btn1" onclick="addtolast()">Add to End</button>
+<button type ="button" id="btn2" onclick="search()"> Search</button> </br>
+ <label for="i2">Enter the number</label>
+<input type="text" id="i2"/>
+<button type="submit" id="btn3" onclick="insertAtIndex()">InsertAt Index</button> </br>
+ <label for="i3">Enter the number</label>
+<input type=" text" id="i3"/>
+<button type ="button" id="btn4" onclick=" removeAtIndex()">RemoveFromIndex</button>
+<p id="result">Result</p>
+<p id="status">status</p>
+
+
+</body>
+
+<script>
+ let myData = [10, 20, 30];
+
+    
+    function update() {
+        document.getElementById("result").innerText = "Array: " + myData;
+     }
+
+
+     function addtolast(){
+      let val= document.getElementById("i1").value;
+       myData.push(val);
+       update();
+
+     }
+function search(){
+let val1= document.getElementById("i1").value;
+console.log(val1);
+if(myData.includes(parseInt(val1))){
+document.getElementById("status").innerText="status: Found";
+}
+else{
+    document.getElementById("status").innerText="status:Not Found";
+}
+  
+
+}
+
+function insertAtIndex(){
+    let val=document.getElementById("i1").value;
+let idx=document.getElementById("i2").value;
+
+
+myData.splice(parseInt(idx),0,parseInt(val));
+update();
+
+
+}
+function removeAtIndex(){
+let val=document.getElementById("i3").value;
+myData.splice(val, 1);
+  update();
+
+
+}
+
+update();
+</script>
+
+
+
+
+</html>>

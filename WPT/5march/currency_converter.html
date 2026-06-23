@@ -1,0 +1,69 @@
+<html>
+
+<head >
+Currency Converter
+</head>
+<body align="center">
+    <div  style=color:black; border:blue;  >
+   <input type="number" id="in" placeholder="Enter your amount"/>
+
+   <div style="margin-top: 10px;">
+        <label for="from">From</label>
+    <select name="from" id="from">
+        <option value="Rupee">Rupee</option>
+          <option value="Dollar">Dollar</option>
+            <option value="Euro">Euro</option>
+    </select>
+    <label for="to">To</label>
+    <select name="to" id="to">
+    <option value="Rupee">Rupee</option>
+          <option value="Dollar">Dollar</option>
+            <option value="Euro">Euro</option>
+</select>
+<button type="button" onclick="changecurrency()" id="btn">Change</button>
+</div>
+
+<p id="result"></p>
+
+
+<script>
+function changecurrency(){
+ 
+rates={
+    "Rupee":1,
+    "Dollar":80,
+    "Euro":85
+
+};
+
+const amount =parseInt(document.getElementById("in").value);
+console.log(amount);
+const fromCurrency=document.getElementById("from").value;
+console.log(fromCurrency);
+const tocurrency=document.getElementById("to").value
+console.log(tocurrency);
+ const resultParagraph = document.getElementById('result');
+
+if(isNaN(amount)){
+    resultParagraph.innerHTML="Enter the valid number"
+    return;
+}
+   let amountInRupees=amount*rates[fromCurrency];
+   let finalAmount= amountInRupees/rates[tocurrency]
+
+   resultParagraph.innerHTML=finalAmount;
+
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

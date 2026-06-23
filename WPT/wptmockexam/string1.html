@@ -1,0 +1,40 @@
+<html>
+<head>
+<h1>String Manupulation</h1>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <label for="input"> Enter the text
+        <input type="text" id="input"/>
+    </label>
+    <button id="btn">Click</button>
+    <p id="result"></p>
+</body>
+<script>
+$(document).ready(()=>{
+    $("#btn").click(
+        ()=>{
+       let text= $("#input").val();
+           console.log(text);
+        let strrev=text.split("").reverse().join("");
+        const result= $("#result").text(strrev);
+
+      
+
+        }
+    )
+
+
+
+
+}
+    
+)
+
+
+
+</script>
+
+</html>
