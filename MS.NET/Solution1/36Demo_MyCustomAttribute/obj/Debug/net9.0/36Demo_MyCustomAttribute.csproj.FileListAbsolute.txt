@@ -1,0 +1,12 @@
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\bin\Debug\net9.0\36Demo_MyCustomAttribute.deps.json
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\bin\Debug\net9.0\36Demo_MyCustomAttribute.dll
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\bin\Debug\net9.0\36Demo_MyCustomAttribute.pdb
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.sourcelink.json
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.dll
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\refint\36Demo_MyCustomAttribute.dll
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\36Demo_MyCustomAttribute.pdb
+C:\Users\IET\source\repos\Solution1\36Demo_MyCustomAttribute\obj\Debug\net9.0\ref\36Demo_MyCustomAttribute.dll

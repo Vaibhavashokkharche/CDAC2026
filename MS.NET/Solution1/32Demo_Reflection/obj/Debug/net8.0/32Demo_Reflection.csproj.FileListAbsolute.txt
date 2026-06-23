@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\bin\Debug\net8.0\32Demo_Reflection.exe
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\bin\Debug\net8.0\32Demo_Reflection.deps.json
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\bin\Debug\net8.0\32Demo_Reflection.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\bin\Debug\net8.0\32Demo_Reflection.dll
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\bin\Debug\net8.0\32Demo_Reflection.pdb
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.sourcelink.json
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.dll
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\refint\32Demo_Reflection.dll
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.pdb
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\32Demo_Reflection.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\32Demo_Reflection\obj\Debug\net8.0\ref\32Demo_Reflection.dll

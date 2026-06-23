@@ -1,0 +1,14 @@
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\Opp1.exe
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\Opp1.deps.json
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\Opp1.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\Opp1.dll
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\Opp1.pdb
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.dll
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\refint\Opp1.dll
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.pdb
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\Opp1.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\ref\Opp1.dll

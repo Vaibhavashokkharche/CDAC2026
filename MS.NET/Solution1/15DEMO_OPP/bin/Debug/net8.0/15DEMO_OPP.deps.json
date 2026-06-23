@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "15DEMO_OPP/1.0.0": {
+        "dependencies": {
+          "14DEMO_CMathLib": "1.0.0",
+          "16DEMO_Template": "1.0.0"
+        },
+        "runtime": {
+          "15DEMO_OPP.dll": {}
+        }
+      },
+      "14DEMO_CMathLib/1.0.0": {
+        "runtime": {
+          "14DEMO_CMathLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "16DEMO_Template/1.0.0": {
+        "runtime": {
+          "16DEMO_Template.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "15DEMO_OPP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "14DEMO_CMathLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "16DEMO_Template/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

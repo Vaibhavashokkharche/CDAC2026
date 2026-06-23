@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\bin\Debug\net8.0\20Demo_ObserverDesignPattern.exe
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\bin\Debug\net8.0\20Demo_ObserverDesignPattern.deps.json
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\bin\Debug\net8.0\20Demo_ObserverDesignPattern.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\bin\Debug\net8.0\20Demo_ObserverDesignPattern.dll
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\bin\Debug\net8.0\20Demo_ObserverDesignPattern.pdb
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.dll
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\refint\20Demo_ObserverDesignPattern.dll
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.pdb
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\ref\20Demo_ObserverDesignPattern.dll
+C:\Users\IET\source\repos\Solution1\20Demo_ObserverDesignPattern\obj\Debug\net8.0\20Demo_ObserverDesignPattern.sourcelink.json

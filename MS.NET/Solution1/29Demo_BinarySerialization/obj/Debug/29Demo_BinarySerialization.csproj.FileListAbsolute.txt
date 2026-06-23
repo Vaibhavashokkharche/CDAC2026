@@ -1,0 +1,7 @@
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\bin\Debug\29Demo_BinarySerialization.exe.config
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\bin\Debug\29Demo_BinarySerialization.exe
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\bin\Debug\29Demo_BinarySerialization.pdb
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\obj\Debug\29Demo_BinarySerialization.csproj.AssemblyReference.cache
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\obj\Debug\29Demo_BinarySerialization.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\obj\Debug\29Demo_BinarySerialization.exe
+C:\Users\IET\source\repos\Solution1\29Demo_BinarySerialization\obj\Debug\29Demo_BinarySerialization.pdb

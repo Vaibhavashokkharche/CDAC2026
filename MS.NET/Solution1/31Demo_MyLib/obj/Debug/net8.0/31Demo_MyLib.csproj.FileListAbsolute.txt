@@ -1,0 +1,12 @@
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\bin\Debug\net8.0\31Demo_MyLib.deps.json
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\bin\Debug\net8.0\31Demo_MyLib.dll
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\bin\Debug\net8.0\31Demo_MyLib.pdb
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.sourcelink.json
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.dll
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\refint\31Demo_MyLib.dll
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\31Demo_MyLib.pdb
+C:\Users\IET\source\repos\Solution1\31Demo_MyLib\obj\Debug\net8.0\ref\31Demo_MyLib.dll

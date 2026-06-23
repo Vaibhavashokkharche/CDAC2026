@@ -1,0 +1,14 @@
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\05Demo_OPP.exe
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\05Demo_OPP.deps.json
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\05Demo_OPP.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\05Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\Opp1\bin\Debug\net8.0\05Demo_OPP.pdb
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\refint\05Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.pdb
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\05Demo_OPP.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\Opp1\obj\Debug\net8.0\ref\05Demo_OPP.dll

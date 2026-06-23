@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\bin\Debug\net8.0\23Demo_Generic.exe
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\bin\Debug\net8.0\23Demo_Generic.deps.json
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\bin\Debug\net8.0\23Demo_Generic.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\bin\Debug\net8.0\23Demo_Generic.dll
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\bin\Debug\net8.0\23Demo_Generic.pdb
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.sourcelink.json
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.dll
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\refint\23Demo_Generic.dll
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.pdb
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\23Demo_Generic.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\23Demo_Generic\obj\Debug\net8.0\ref\23Demo_Generic.dll

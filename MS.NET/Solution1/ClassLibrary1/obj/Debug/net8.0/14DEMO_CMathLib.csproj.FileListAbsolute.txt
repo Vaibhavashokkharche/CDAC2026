@@ -1,0 +1,11 @@
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\bin\Debug\net8.0\14DEMO_CMathLib.deps.json
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\bin\Debug\net8.0\14DEMO_CMathLib.dll
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\bin\Debug\net8.0\14DEMO_CMathLib.pdb
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.dll
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\refint\14DEMO_CMathLib.dll
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\14DEMO_CMathLib.pdb
+C:\Users\IET\source\repos\Solution1\ClassLibrary1\obj\Debug\net8.0\ref\14DEMO_CMathLib.dll

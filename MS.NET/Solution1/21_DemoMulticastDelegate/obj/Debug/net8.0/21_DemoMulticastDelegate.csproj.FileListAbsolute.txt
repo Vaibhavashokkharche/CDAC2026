@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\bin\Debug\net8.0\21_DemoMulticastDelegate.exe
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\bin\Debug\net8.0\21_DemoMulticastDelegate.deps.json
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\bin\Debug\net8.0\21_DemoMulticastDelegate.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\bin\Debug\net8.0\21_DemoMulticastDelegate.dll
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\bin\Debug\net8.0\21_DemoMulticastDelegate.pdb
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.dll
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\refint\21_DemoMulticastDelegate.dll
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.pdb
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\ref\21_DemoMulticastDelegate.dll
+C:\Users\IET\source\repos\Solution1\21_DemoMulticastDelegate\obj\Debug\net8.0\21_DemoMulticastDelegate.sourcelink.json

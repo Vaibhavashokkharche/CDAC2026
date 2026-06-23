@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\bin\Debug\net8.0\28Demo_FileIO.exe
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\bin\Debug\net8.0\28Demo_FileIO.deps.json
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\bin\Debug\net8.0\28Demo_FileIO.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\bin\Debug\net8.0\28Demo_FileIO.dll
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\bin\Debug\net8.0\28Demo_FileIO.pdb
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.sourcelink.json
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.dll
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\refint\28Demo_FileIO.dll
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.pdb
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\28Demo_FileIO.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\28Demo_FileIO\obj\Debug\net8.0\ref\28Demo_FileIO.dll

@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\bin\Debug\net8.0\27Demo_ExceptionHandling.exe
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\bin\Debug\net8.0\27Demo_ExceptionHandling.deps.json
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\bin\Debug\net8.0\27Demo_ExceptionHandling.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\bin\Debug\net8.0\27Demo_ExceptionHandling.dll
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\bin\Debug\net8.0\27Demo_ExceptionHandling.pdb
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.sourcelink.json
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.dll
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\refint\27Demo_ExceptionHandling.dll
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.pdb
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\27Demo_ExceptionHandling.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\27Demo_ExceptionHandling\obj\Debug\net8.0\ref\27Demo_ExceptionHandling.dll

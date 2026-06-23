@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "1415OIAp4IE=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\IET\\source\\repos\\Solution1\\34Demo_EmpLib\\34Demo_EmpLib.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\IET\\source\\repos\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\34Demo_EmpLib\\34Demo_EmpLib.csproj",
+      "filePath": "C:\\Users\\IET\\source\\repos\\Solution1\\34Demo_EmpLib\\34Demo_EmpLib.csproj",
+      "libraryId": "C:\\Users\\IET\\source\\repos\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\bin\Debug\net8.0\16DEMO_Template.exe
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\bin\Debug\net8.0\16DEMO_Template.deps.json
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\bin\Debug\net8.0\16DEMO_Template.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\bin\Debug\net8.0\16DEMO_Template.dll
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\bin\Debug\net8.0\16DEMO_Template.pdb
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.dll
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\refint\16DEMO_Template.dll
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.pdb
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\16DEMO_Template.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\16DEMO_Template\obj\Debug\net8.0\ref\16DEMO_Template.dll

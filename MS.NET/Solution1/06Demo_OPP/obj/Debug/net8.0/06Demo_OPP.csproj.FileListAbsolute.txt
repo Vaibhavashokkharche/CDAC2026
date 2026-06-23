@@ -1,0 +1,14 @@
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\bin\Debug\net8.0\06Demo_OPP.exe
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\bin\Debug\net8.0\06Demo_OPP.deps.json
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\bin\Debug\net8.0\06Demo_OPP.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\bin\Debug\net8.0\06Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\bin\Debug\net8.0\06Demo_OPP.pdb
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\refint\06Demo_OPP.dll
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.pdb
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\06Demo_OPP.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\06Demo_OPP\obj\Debug\net8.0\ref\06Demo_OPP.dll

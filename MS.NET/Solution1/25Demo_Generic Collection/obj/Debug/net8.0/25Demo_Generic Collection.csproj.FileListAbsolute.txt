@@ -1,0 +1,15 @@
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\bin\Debug\net8.0\25Demo_Generic Collection.exe
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\bin\Debug\net8.0\25Demo_Generic Collection.deps.json
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\bin\Debug\net8.0\25Demo_Generic Collection.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\bin\Debug\net8.0\25Demo_Generic Collection.dll
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\bin\Debug\net8.0\25Demo_Generic Collection.pdb
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.sourcelink.json
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.dll
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\refint\25Demo_Generic Collection.dll
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.pdb
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\25Demo_Generic Collection.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\25Demo_Generic Collection\obj\Debug\net8.0\ref\25Demo_Generic Collection.dll

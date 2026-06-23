@@ -1,0 +1,14 @@
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\bin\Debug\net8.0\18Demo_Delegate.exe
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\bin\Debug\net8.0\18Demo_Delegate.deps.json
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\bin\Debug\net8.0\18Demo_Delegate.runtimeconfig.json
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\bin\Debug\net8.0\18Demo_Delegate.dll
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\bin\Debug\net8.0\18Demo_Delegate.pdb
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.AssemblyInfoInputs.cache
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.AssemblyInfo.cs
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.csproj.CoreCompileInputs.cache
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.dll
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\refint\18Demo_Delegate.dll
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.pdb
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\18Demo_Delegate.genruntimeconfig.cache
+C:\Users\IET\source\repos\Solution1\18Demo_Delegate\obj\Debug\net8.0\ref\18Demo_Delegate.dll
