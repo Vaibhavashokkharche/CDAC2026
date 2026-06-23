@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="com.demo.beans.Product"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Product List</h1>
+<table>
+<tr>
+<th>Productid</th>
+<th>ProductName</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>MfgDate</th>
+<th>cid</th>
+</tr>
+<c:forEach var="p" items="${plist}">
+
+</c:forEach>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>

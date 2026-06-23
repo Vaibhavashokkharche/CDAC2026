@@ -1,0 +1,14 @@
+package com.demo.controller;
+
+import org.springframework.stereotype.Controller;
+
+public class HelloController {
+	@Controller
+   public String sayHello() {
+	   
+	   return "Welcome Vaibhav in Spring Mvc";
+   }	
+	
+	
+
+}
