@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vaibh\\Downloads\\repos-20260622T131857Z-3-001\\repos\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
+    "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vaibh\\Downloads\\repos-20260622T131857Z-3-001\\repos\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
+    "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vaibh\\Downloads\\repos-20260622T131857Z-3-001\\repos\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectUniqueName": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "projectName": "EmployeeManagementSystem",
-        "projectPath": "C:\\Users\\vaibh\\Downloads\\repos-20260622T131857Z-3-001\\repos\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vaibh\\Downloads\\repos-20260622T131857Z-3-001\\repos\\Solution1\\EmployeeManagementSystem\\obj\\",
+        "outputPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\EmployeeManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

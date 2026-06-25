@@ -1,0 +1,15 @@
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\bin\Debug\net8.0\38Demo_CsharpFetaures.exe
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\bin\Debug\net8.0\38Demo_CsharpFetaures.deps.json
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\bin\Debug\net8.0\38Demo_CsharpFetaures.runtimeconfig.json
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\bin\Debug\net8.0\38Demo_CsharpFetaures.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\bin\Debug\net8.0\38Demo_CsharpFetaures.pdb
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.AssemblyInfoInputs.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.AssemblyInfo.cs
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.csproj.CoreCompileInputs.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.sourcelink.json
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\refint\38Demo_CsharpFetaures.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.pdb
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\38Demo_CsharpFetaures.genruntimeconfig.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\38Demo_CsharpFetaures\obj\Debug\net8.0\ref\38Demo_CsharpFetaures.dll

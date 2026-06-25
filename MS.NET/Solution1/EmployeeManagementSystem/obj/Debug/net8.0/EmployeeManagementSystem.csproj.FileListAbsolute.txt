@@ -27,3 +27,18 @@ C:\Users\vaibh\Downloads\repos-20260622T131857Z-3-001\repos\Solution1\EmployeeMa
 C:\Users\vaibh\Downloads\repos-20260622T131857Z-3-001\repos\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.pdb
 C:\Users\vaibh\Downloads\repos-20260622T131857Z-3-001\repos\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.genruntimeconfig.cache
 C:\Users\vaibh\Downloads\repos-20260622T131857Z-3-001\repos\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\ref\EmployeeManagementSystem.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.exe
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.deps.json
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.runtimeconfig.json
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\bin\Debug\net8.0\EmployeeManagementSystem.pdb
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.AssemblyInfoInputs.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.AssemblyInfo.cs
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.sourcelink.json
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\refint\EmployeeManagementSystem.dll
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.pdb
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.genruntimeconfig.cache
+D:\CDAC 2026\Git\MS.NET\Solution1\EmployeeManagementSystem\obj\Debug\net8.0\ref\EmployeeManagementSystem.dll
