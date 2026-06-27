@@ -43,23 +43,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IET\\.nuget\\packages\\": {},
+    "C:\\Users\\vaibh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\source\\repos\\Solution1\\15DEMO_OPP\\15DEMO_OPP.csproj",
+      "projectUniqueName": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\15DEMO_OPP\\15DEMO_OPP.csproj",
       "projectName": "15DEMO_OPP",
-      "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\15DEMO_OPP\\15DEMO_OPP.csproj",
-      "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\source\\repos\\Solution1\\15DEMO_OPP\\obj\\",
+      "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\15DEMO_OPP\\15DEMO_OPP.csproj",
+      "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
+      "outputPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\15DEMO_OPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vaibh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -74,11 +74,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\IET\\source\\repos\\Solution1\\16DEMO_Template\\16DEMO_Template.csproj": {
-              "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\16DEMO_Template\\16DEMO_Template.csproj"
+            "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\16DEMO_Template\\16DEMO_Template.csproj": {
+              "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\16DEMO_Template\\16DEMO_Template.csproj"
             },
-            "C:\\Users\\IET\\source\\repos\\Solution1\\ClassLibrary1\\14DEMO_CMathLib.csproj": {
-              "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\ClassLibrary1\\14DEMO_CMathLib.csproj"
+            "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\ClassLibrary1\\14DEMO_CMathLib.csproj": {
+              "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\ClassLibrary1\\14DEMO_CMathLib.csproj"
             }
           }
         }

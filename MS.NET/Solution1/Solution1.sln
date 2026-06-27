@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38Demo_CsharpFetaures", "38
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41DemoCrudApp", "41DemoCrudApp\41DemoCrudApp.csproj", "{39FBD141-59CD-47EE-B396-51D5102B91D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42_DemoCrudAppUsingEntityFw", "42_DemoCrudAppUsingEntityFw\42_DemoCrudAppUsingEntityFw.csproj", "{67D55335-CD80-4323-9E73-FEC82FB5E055}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,10 @@ Global
 		{39FBD141-59CD-47EE-B396-51D5102B91D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39FBD141-59CD-47EE-B396-51D5102B91D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39FBD141-59CD-47EE-B396-51D5102B91D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D55335-CD80-4323-9E73-FEC82FB5E055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D55335-CD80-4323-9E73-FEC82FB5E055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D55335-CD80-4323-9E73-FEC82FB5E055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D55335-CD80-4323-9E73-FEC82FB5E055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

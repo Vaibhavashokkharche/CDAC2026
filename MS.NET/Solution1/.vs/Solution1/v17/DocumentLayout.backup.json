@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|d:\\cdac 2026\\git\\ms.net\\solution1\\42_democrudappusingentityfw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|solutionrelative:42_democrudappusingentityfw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|d:\\cdac 2026\\git\\ms.net\\solution1\\42_democrudappusingentityfw\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|solutionrelative:42_democrudappusingentityfw\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|d:\\cdac 2026\\git\\ms.net\\solution1\\42_democrudappusingentityfw\\migrations\\20260626121014_intialcommit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|solutionrelative:42_democrudappusingentityfw\\migrations\\20260626121014_intialcommit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|d:\\cdac 2026\\git\\ms.net\\solution1\\42_democrudappusingentityfw\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67D55335-CD80-4323-9E73-FEC82FB5E055}|42_DemoCrudAppUsingEntityFw\\42_DemoCrudAppUsingEntityFw.csproj|solutionrelative:42_democrudappusingentityfw\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Program.cs",
+              "RelativeDocumentMoniker": "42_DemoCrudAppUsingEntityFw\\Program.cs",
+              "ToolTip": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Program.cs",
+              "RelativeToolTip": "42_DemoCrudAppUsingEntityFw\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAMBdwA0AAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:50:29.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260626121014_IntialCommit.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Migrations\\20260626121014_IntialCommit.cs",
+              "RelativeDocumentMoniker": "42_DemoCrudAppUsingEntityFw\\Migrations\\20260626121014_IntialCommit.cs",
+              "ToolTip": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Migrations\\20260626121014_IntialCommit.cs",
+              "RelativeToolTip": "42_DemoCrudAppUsingEntityFw\\Migrations\\20260626121014_IntialCommit.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T12:10:14.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\appsettings.json",
+              "RelativeDocumentMoniker": "42_DemoCrudAppUsingEntityFw\\appsettings.json",
+              "ToolTip": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\appsettings.json",
+              "RelativeToolTip": "42_DemoCrudAppUsingEntityFw\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-26T12:07:16.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "42_DemoCrudAppUsingEntityFw\\Models\\Vehicle.cs",
+              "ToolTip": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\42_DemoCrudAppUsingEntityFw\\Models\\Vehicle.cs",
+              "RelativeToolTip": "42_DemoCrudAppUsingEntityFw\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:51:32.305Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

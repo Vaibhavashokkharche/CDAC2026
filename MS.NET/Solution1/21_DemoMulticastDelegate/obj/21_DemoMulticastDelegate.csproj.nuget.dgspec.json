@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IET\\source\\repos\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj": {}
+    "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IET\\source\\repos\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj": {
+    "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IET\\source\\repos\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj",
+        "projectUniqueName": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj",
         "projectName": "21_DemoMulticastDelegate",
-        "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj",
-        "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IET\\source\\repos\\Solution1\\21_DemoMulticastDelegate\\obj\\",
+        "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\21_DemoMulticastDelegate\\21_DemoMulticastDelegate.csproj",
+        "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
+        "outputPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\21_DemoMulticastDelegate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vaibh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

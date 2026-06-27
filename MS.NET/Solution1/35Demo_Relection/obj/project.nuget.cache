@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "yaOItD2Znto=",
+  "dgSpecHash": "AoD+cn+tYxY=",
   "success": false,
-  "projectFilePath": "C:\\Users\\IET\\source\\repos\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
+  "projectFilePath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\IET\\source\\repos\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\Users\\IET\\source\\repos\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
-      "filePath": "C:\\Users\\IET\\source\\repos\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
-      "libraryId": "C:\\Users\\IET\\source\\repos\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj",
+      "message": "Unable to find project 'D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
+      "filePath": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\35Demo_Relection\\35Demo_Relection.csproj",
+      "libraryId": "D:\\CDAC 2026\\Git\\MS.NET\\Solution1\\32Demo_MyLib\\33Demo_MyLib.csproj",
       "targetGraphs": [
         "net9.0"
       ]
